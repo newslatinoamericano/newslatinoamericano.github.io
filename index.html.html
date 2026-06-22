@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News LATAM — Análisis, Geopolítica y Periodismo Independiente</title>
+  <meta name="description" content="Periodismo independiente, análisis geopolítico y reportajes de fondo por Francisco Veracoechea."/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--ink:#111;--red:#C8102E;--red2:#9B0A22;--gray:#4A4A4A;--light:#F5F5F3;--rule:#DDD;--white:#FFF;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:"Inter",sans-serif;background:var(--white);color:var(--ink);line-height:1.7;}
+    /* HEADER */
+    header{background:var(--ink);}
+    .header-top{display:flex;align-items:center;justify-content:space-between;padding:.55rem 2rem;border-bottom:1px solid rgba(255,255,255,.1);}
+    .header-date{font-size:.72rem;color:rgba(255,255,255,.4);letter-spacing:.06em;}
+    .header-social{display:flex;gap:1.2rem;}
+    .header-social a{font-size:.72rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s;}
+    .header-social a:hover{color:var(--red);}
+    .header-brand{text-align:center;padding:1.8rem 2rem 1.4rem;border-bottom:3px solid var(--red);}
+    .brand-name{font-family:"Playfair Display",serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:900;line-height:1;}
+    .brand-news{color:var(--white);}
+    .brand-latam{color:var(--red);}
+    .brand-tagline{font-size:.72rem;color:rgba(255,255,255,.38);letter-spacing:.18em;text-transform:uppercase;margin-top:.5rem;}
+    /* NAV */
+    nav{background:var(--ink);display:flex;align-items:center;justify-content:center;position:sticky;top:0;z-index:100;border-top:1px solid rgba(255,255,255,.08);}
+    nav a{color:rgba(255,255,255,.65);text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.75rem 1.4rem;border-right:1px solid rgba(255,255,255,.08);transition:background .2s,color .2s;cursor:pointer;}
+    nav a:first-child{border-left:1px solid rgba(255,255,255,.08);}
+    nav a:hover,nav a.active{background:var(--red);color:var(--white);}
+    /* BREAKING */
+    .breaking-bar{background:var(--red);color:var(--white);display:flex;align-items:center;gap:1rem;padding:.5rem 2rem;font-size:.78rem;}
+    .breaking-label{font-weight:700;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;}
+    /* LAYOUT */
+    .page-wrap{max-width:1200px;margin:0 auto;padding:2.5rem 2rem;}
+    .section-rule{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem;}
+    .section-rule-label{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--white);background:var(--red);padding:.25rem .7rem;white-space:nowrap;}
+    .section-rule-line{flex:1;height:2px;background:var(--ink);}
+    /* FEATURED */
+    .featured-grid{display:grid;grid-template-columns:2fr 1fr;gap:0;border:1px solid var(--rule);margin-bottom:3rem;}
+    .featured-main{border-right:1px solid var(--rule);display:flex;flex-direction:column;}
+    .featured-img{width:100%;height:280px;object-fit:cover;background:var(--light);display:block;}
+    .featured-body{padding:1.6rem;flex:1;}
+    .featured-secondary{display:flex;flex-direction:column;}
+    .side-art{padding:1.2rem;border-bottom:1px solid var(--rule);flex:1;text-decoration:none;display:block;transition:background .15s;cursor:pointer;}
+    .side-art:last-child{border-bottom:none;}
+    .side-art:hover{background:var(--light);}
+    .side-img{width:100%;height:110px;object-fit:cover;margin-bottom:.7rem;}
+    .side-art h3{font-family:"Playfair Display",serif;font-size:1rem;color:var(--ink);line-height:1.3;margin-bottom:.4rem;}
+    .side-art p{font-size:.8rem;color:var(--gray);line-height:1.5;}
+    .art-kicker{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;}
+    .featured-body h2{font-family:"Playfair Display",serif;font-size:1.8rem;font-weight:900;color:var(--ink);line-height:1.2;margin-bottom:.7rem;}
+    .deck{font-family:"Source Serif 4",serif;font-size:1rem;color:var(--gray);line-height:1.65;margin-bottom:1rem;text-align:justify;}
+    .art-byline{font-size:.75rem;color:var(--gray);border-top:1px solid var(--rule);padding-top:.8rem;}
+    .art-byline strong{color:var(--ink);}
+    .read-link{color:var(--red);text-decoration:none;font-weight:600;cursor:pointer;}
+    /* THREE COL */
+    .three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule);margin-bottom:3rem;}
+    .col-art{padding:1.4rem;border-right:1px solid var(--rule);text-decoration:none;display:block;transition:background .15s;cursor:pointer;}
+    .col-art:last-child{border-right:none;}
+    .col-art:hover{background:var(--light);}
+    .col-img{width:100%;height:140px;object-fit:cover;margin-bottom:.8rem;}
+    .col-art h3{font-family:"Playfair Display",serif;font-size:1.05rem;color:var(--ink);line-height:1.3;margin-bottom:.4rem;}
+    .col-art p{font-size:.8rem;color:var(--gray);line-height:1.55;}
+    .art-date{font-size:.7rem;color:#999;margin-top:.7rem;display:block;}
+    /* BODY GRID */
+    .body-grid{display:grid;grid-template-columns:1fr 280px;gap:2.5rem;}
+    /* LIST */
+    .list-art{display:grid;grid-template-columns:120px 1fr;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--rule);text-decoration:none;transition:background .15s;cursor:pointer;}
+    .list-art:first-child{border-top:1px solid var(--rule);}
+    .list-art:hover{background:var(--light);}
+    .list-img{width:120px;height:80px;object-fit:cover;}
+    .list-body h4{font-family:"Playfair Display",serif;font-size:.98rem;color:var(--ink);line-height:1.3;margin-bottom:.3rem;}
+    .list-body p{font-size:.78rem;color:var(--gray);line-height:1.5;}
+    .meta{font-size:.7rem;color:#999;margin-top:.4rem;display:block;}
+    .ver-mas{display:inline-block;margin-top:1.5rem;font-size:.82rem;font-weight:700;color:var(--red);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid var(--red);padding-bottom:2px;}
+    /* IMG PLACEHOLDER */
+    .img-ph{background:var(--light);display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#ccc;}
+    /* SIDEBAR */
+    .widget{margin-bottom:2rem;}
+    .widget-title{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--white);background:var(--ink);padding:.4rem .8rem;margin-bottom:.8rem;display:block;}
+    .archive-list{list-style:none;border:1px solid var(--rule);}
+    .archive-list li{border-bottom:1px solid var(--rule);}
+    .archive-list li:last-child{border:none;}
+    .archive-list a{display:flex;justify-content:space-between;align-items:center;padding:.55rem .8rem;font-size:.82rem;color:var(--gray);text-decoration:none;transition:background .15s;}
+    .archive-list a:hover{background:var(--light);color:var(--ink);}
+    .arch-count{font-size:.7rem;background:var(--light);padding:.1rem .5rem;border-radius:10px;}
+    .about-widget{border:1px solid var(--rule);padding:1.2rem;font-size:.83rem;color:var(--gray);line-height:1.6;}
+    .about-widget strong{color:var(--ink);display:block;font-family:"Playfair Display",serif;font-size:1rem;margin-bottom:.4rem;}
+    .about-social{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem;}
+    .about-social a{font-size:.72rem;font-weight:600;color:var(--ink);text-decoration:none;border:1px solid var(--rule);padding:.2rem .6rem;transition:border-color .2s,color .2s;}
+    .about-social a:hover{border-color:var(--red);color:var(--red);}
+    .support-widget{background:var(--ink);padding:1.2rem;}
+    .support-widget p{font-size:.8rem;color:rgba(255,255,255,.6);margin-bottom:1rem;line-height:1.5;}
+    .support-btn{display:block;background:var(--red);color:var(--white);text-align:center;padding:.55rem;font-size:.78rem;font-weight:700;text-decoration:none;margin-bottom:.5rem;transition:background .2s;letter-spacing:.04em;text-transform:uppercase;}
+    .support-btn:hover{background:var(--red2);}
+    .support-btn.outline{background:transparent;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.7);}
+    .support-btn.outline:hover{border-color:var(--red);color:var(--white);background:var(--red);}
+    /* ARTICLE VIEW */
+    #article-view{display:none;}
+    #listing-view{}
+    .art-back{display:inline-flex;align-items:center;gap:.5rem;color:var(--red);font-size:.82rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1.5rem;border:none;background:none;padding:0;}
+    .art-back:hover{color:var(--red2);}
+    .art-header{border-bottom:3px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2rem;}
+    .art-header .art-kicker{font-size:.75rem;margin-bottom:.6rem;}
+    .art-header h1{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;line-height:1.15;color:var(--ink);margin-bottom:.8rem;}
+    .art-header .deck{font-family:"Source Serif 4",serif;font-size:1.1rem;color:var(--gray);line-height:1.6;margin-bottom:1rem;}
+    .art-header .art-byline{font-size:.8rem;color:var(--gray);}
+    .art-header img{width:100%;max-height:420px;object-fit:cover;margin:1.2rem 0;}
+    .art-body{font-family:"Source Serif 4",serif;font-size:1.05rem;line-height:1.85;color:#222;max-width:720px;text-align:justify;}
+    .art-body p{margin-bottom:1.4rem;}
+    .art-body h2,.art-body h3{font-family:"Playfair Display",serif;color:var(--ink);margin:2rem 0 .8rem;line-height:1.3;}
+    .art-body h2{font-size:1.5rem;}
+    .art-body h3{font-size:1.2rem;}
+    .art-body strong{color:var(--ink);}
+    .art-body em{font-style:italic;}
+    .art-body hr{border:none;border-top:2px solid var(--rule);margin:2rem 0;}
+    .art-body img{max-width:100%;height:auto;margin:1.5rem 0;display:block;}
+    .art-body ul,.art-body ol{margin:0 0 1.4rem 1.5rem;}
+    .art-body li{margin-bottom:.4rem;}
+    .art-donate{background:var(--light);border-left:4px solid var(--red);padding:1.2rem 1.5rem;margin:2.5rem 0;font-size:.88rem;color:var(--gray);}
+    .art-donate strong{color:var(--ink);display:block;margin-bottom:.4rem;}
+    .art-donate a{color:var(--red);font-weight:600;}
+    .art-grid{display:grid;grid-template-columns:1fr 280px;gap:2.5rem;margin-top:2rem;}
+    /* FOOTER */
+    footer{background:var(--ink);color:rgba(255,255,255,.45);margin-top:3rem;}
+    .footer-top{border-top:3px solid var(--red);padding:2rem;display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:1.5rem;}
+    .footer-brand{font-family:"Playfair Display",serif;font-size:1.4rem;}
+    .footer-brand small{display:block;font-family:"Inter",sans-serif;font-size:.72rem;color:rgba(255,255,255,.35);letter-spacing:.12em;text-transform:uppercase;margin-top:.25rem;}
+    .footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+    .footer-links a{font-size:.8rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s;}
+    .footer-links a:hover{color:var(--red);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:1rem 2rem;text-align:center;font-size:.72rem;}
+    @media(max-width:900px){
+      .featured-grid,.three-col,.body-grid,.art-grid{grid-template-columns:1fr;}
+      .featured-main{border-right:none;border-bottom:1px solid var(--rule);}
+      .col-art{border-right:none;border-bottom:1px solid var(--rule);}
+      nav a{padding:.6rem .9rem;font-size:.7rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <span class="header-date" id="hoy-fecha"></span>
+    <div class="header-social">
+      <a href="https://x.com/opinionFV" target="_blank">X @opinionFV</a>
+      <a href="https://www.tiktok.com/@newsweek_latam" target="_blank">TikTok @newsweek_latam</a>
+      <a href="mailto:endirectofv@gmail.com">endirectofv@gmail.com</a>
+    </div>
+  </div>
+  <div class="header-brand">
+    <div class="brand-name" onclick="mostrarListado()" style="cursor:pointer" title="Ir al inicio"><span class="brand-news">News</span> <span class="brand-latam">LATAM</span></div>
+    <div class="brand-tagline">Periodismo Independiente · Análisis Geopolítico · Contexto que la noticia merece</div>
+  </div>
+</header>
+
+<nav>
+  <a href="https://mediawatchlatam.github.io" target="_blank">Servicios</a>
+  <a onclick="mostrarListado()" class="active" id="nav-inicio">Inicio</a>
+  <a onclick="filtrarPor('conflicto')" id="nav-conflicto">Conflicto</a>
+  <a onclick="filtrarPor('americalatina')" id="nav-latam">América Latina</a>
+  <a onclick="filtrarPor('actualidad')" id="nav-actualidad">Actualidad</a>
+  <a onclick="mostrarSobreMi()" id="nav-sobre">Acerca de mí</a>
+</nav>
+
+<div class="breaking-bar">
+  <span class="breaking-label">Último análisis</span>
+  <span id="breaking-txt"></span>
+</div>
+
+<!-- LISTADO -->
+<div id="listing-view">
+  <div class="page-wrap">
+    <div class="section-rule"><span class="section-rule-label">Análisis destacado</span><div class="section-rule-line"></div></div>
+    <div id="featured-slot"></div>
+    <div class="section-rule"><span class="section-rule-label">Análisis recientes</span><div class="section-rule-line"></div></div>
+    <div id="grid-slot"></div>
+    <div class="body-grid">
+      <main>
+        <div class="section-rule"><span class="section-rule-label">Más artículos</span><div class="section-rule-line"></div></div>
+        <div id="lista-slot"></div>
+        <a href="https://newslatinoamericano.blogspot.com" target="_blank" class="ver-mas">Ver archivo completo →</a>
+      </main>
+      <aside id="sidebar-listing"></aside>
+    </div>
+  </div>
+</div>
+
+<!-- ARTÍCULO COMPLETO -->
+<div id="article-view">
+  <div class="page-wrap">
+    <button class="art-back" onclick="mostrarListado()">← Volver al inicio</button>
+    <div class="art-grid">
+      <main>
+        <div class="art-header">
+          <p class="art-kicker" id="av-kicker"></p>
+          <h1 id="av-titulo"></h1>
+          <p class="deck" id="av-deck"></p>
+          <p class="art-byline">Por <strong>Francisco Veracoechea</strong> | News LATAM &nbsp;·&nbsp; <span id="av-fecha"></span></p>
+          <img id="av-imagen" src="" alt="" style="display:none"/>
+        </div>
+        <div class="art-body" id="av-cuerpo"></div>
+        <div class="art-donate">
+          <strong>Apoyar este trabajo</strong>
+          Si este reportaje le aportó valor, puede contribuir con una pequeña donación:
+          <a href="https://www.paypal.com/donate/?hosted_button_id=7TNKF5WCNFUX8" target="_blank">PayPal</a> ·
+          <a href="https://www.binance.com/es-LA/my/payment/dashboard" target="_blank">Binance</a> ·
+          <a href="mailto:endirectofv@gmail.com">endirectofv@gmail.com</a>
+        </div>
+      </main>
+      <aside id="sidebar-article"></aside>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="brand-news">News</span> <span class="brand-latam">LATAM</span><small>Periodismo Independiente</small></div>
+    <div class="footer-links">
+      <a href="https://newslatinoamericano.blogspot.com" target="_blank">Blog original</a>
+      <a href="https://x.com/opinionFV" target="_blank">X @opinionFV</a>
+      <a href="https://www.tiktok.com/@newsweek_latam" target="_blank">TikTok</a>
+      <a href="https://mediawatchlatam.github.io" target="_blank">MediaWatch Latam</a>
+      <a href="mailto:endirectofv@gmail.com">endirectofv@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 News LATAM · Francisco Veracoechea. Periodismo independiente.</div>
+</footer>
+
+<script>
+/* ============================================================
+   ✏️  PARA AGREGAR UNA NOTICIA NUEVA:
+   1. Copie uno de los bloques de abajo
+   2. Péguelo AL INICIO de la lista (después del primer "[")
+   3. Llene: titulo, categoria, fecha, resumen, imagen, contenido
+   4. destacado: true = aparece grande arriba (solo uno a la vez)
+   5. Suba el archivo a GitHub — listo
+   ============================================================ */
+
+const ARTICULOS = [
+
+  {
+    titulo:    "Pacto a la fuerza",
+    categoria: "Geopolítica · Irán",
+    fecha:     "17 jun 2026",
+    resumen:   "El acuerdo entre Irán y Estados Unidos nace del agotamiento, pero la desconfianza amenaza su supervivencia. Un análisis del Memorando de Islamabad y sus catorce puntos.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEruTF4FMetAqVrtJCytn8N0_i7rpstaXXL2dHLF8iMoz-Ife5Kkxbdvva7IZ2r0B9FsGi1j9afTf8mTpJJ0pLx9KFLu7BtVcnH10A2MNtl1URItXNIty0rVaUQQrfnbwD92amTDKo5C5uooJvPw2cLRTSsF173qhMngBcggBgeeW0xCAkC-U6xqWXJMs/w640-h426/Pacto%20a%20la%20Fuerza.png",
+    destacado: true,
+    contenido: `<p>Hay acuerdos que se firman porque las partes quieren llegar a ellos, y hay acuerdos que se firman porque ya no queda otra salida. El que Washington y Teherán cerraron este miércoles 17 de junio pertenece claramente a la segunda categoría, y lo hicieron de la manera menos solemne posible: cada uno por su lado, de forma digital y a distancia.</p>
+<p>Donald Trump firmó en el Palacio de Versalles, en Francia, tras participar en la cumbre del G7 en Évian-les-Bains, y entregó el documento a su secretario de Estado, Marco Rubio. El presidente iraní, Masoud Pezeshkian, hizo lo propio desde un lugar que su gobierno no precisó. No hubo mesa compartida ni apretón de manos: el memorando viajó por canales electrónicos entre las dos capitales, un gesto que ya dice tanto del acuerdo como su propio contenido.</p>
+<h2>Una tregua que necesitó un intermediario</h2>
+<p>La guerra deja, además, un dato que va a pesar sobre cualquier negociación futura: según reportes coincidentes de prensa internacional, no desmentidos formalmente por Teherán, el ayatolá Ali Khamenei murió en los primeros bombardeos conjuntos de Estados Unidos e Israel. Su hijo, Mojtaba Khamenei, habría asumido el liderazgo con el respaldo de la Guardia Revolucionaria.</p>
+<h2>Lo que el papel sí resuelve</h2>
+<p>El gobierno estadounidense publicó el miércoles el texto que, según un alto funcionario que lo leyó ante la prensa, recoge el entendimiento alcanzado durante el fin de semana: un memorando de catorce puntos titulado oficialmente <em>Memorando de Entendimiento de Islamabad</em>. Su disposición más visible es comercial antes que política: la reapertura del estrecho de Ormuz, la vía por la que circula cerca de una quinta parte del petróleo mundial y que Irán había cerrado como instrumento de presión durante el conflicto. Su desbloqueo ya tuvo efecto inmediato en los mercados: una caída superior al 4% en los precios internacionales del crudo apenas se conoció la noticia.</p>
+<p>A cambio de esa reapertura, Washington ofrece exenciones del Tesoro para que Irán retome la exportación de petróleo y derivados sin las trabas bancarias, de seguros y de transporte que lo asfixiaban desde hace una década.</p>
+<h2>Una guerra sin vencedor declarado</h2>
+<p>Lo más incómodo de este desenlace es que ninguna de las dos partes puede llamarlo victoria sin que la otra lo contradiga. Un análisis publicado por <em>The New York Times</em> sostiene que Washington consumió buena parte de su arsenal de misiles de precisión y de sus sistemas de interceptación sin lograr ninguno de los objetivos planteados públicamente al iniciar la ofensiva, entre ellos un cambio de régimen en Teherán que no se produjo.</p>
+<h2>El socio que quedó fuera de la foto</h2>
+<p>Si hay un actor que termina claramente incómodo con este desenlace, es Israel. El gobierno de Benjamín Netanyahu fue dejado al margen de las negociaciones finales, según reportó el diario <em>The New York Times</em> a través de su corresponsal en Tel Aviv. El malestar no se quedó en privado: el diario israelí <em>Yediot Aharonot</em> resumió el sentimiento general con un titular breve — "mal acuerdo".</p>
+<h2>Por qué este pacto nace frágil</h2>
+<p>El antecedente obligado es el Plan de Acción Integral Conjunto de 2015, el acuerdo nuclear que el propio Trump abandonó tres años después de firmado, calificándolo entonces de débil y desastroso. Si aquel pacto, construido con más tiempo, consenso internacional y detalle técnico, terminó siendo reversible en cuanto cambió el gobierno en Washington, este memorando —más breve, más ambiguo y negociado bajo la presión de una guerra reciente— tiene aún menos margen para sostenerse.</p>
+<p>El propio Trump, consultado por la prensa, admitió cierta incertidumbre sobre si la ceremonia de firma se cumpliría según lo previsto, una declaración inusual para quien debe presidirla. Queda, además, un frente que el memorando da por cerrado sin que todos los actores armados estén de acuerdo: Israel ya advirtió que seguirá actuando en Líbano cuando lo considere necesario, con o sin el aval de Washington.</p>
+<p>Los acuerdos que nacen así —Medio Oriente lo ha demostrado más de una vez— rara vez se sostienen por sí mismos cuando deja de doler el costo que los hizo necesarios en primer lugar.</p>`
+  },
+
+  {
+    titulo:    "Después del silencio",
+    categoria: "Reflexión",
+    fecha:     "5 jun 2026",
+    resumen:   "Una reflexión sobre la familia, la incertidumbre, la reinvención profesional y el regreso a este espacio tras dos meses de ausencia.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG6ar_68u7oRxVYarCCCiPUvOIN9wOLgy69hwBT8t_3QH0x6At-v02xQhGzaoMs-x_Y0ZD0GlgSScfrAOqn5F2Y3wV9nUmbXc-U8kKhxiaIL7sNWpNAqKyqc4PXe1-hzfH_ZBFwhwdjSp0Z14qbPsAb-IzKnEqDnfy74hpR8XlJfEoWFF4Hzwy6eoUc6w/w331-h400/FV.png",
+    destacado: false,
+    contenido: `<p>Han pasado dos meses desde la última publicación en este espacio. No fue una decisión editorial ni una pausa planificada. No hubo anuncio previo ni fecha tentativa de regreso. La vida, con su capacidad para alterar cualquier calendario y desbaratar cualquier agenda, terminó imponiendo sus propias prioridades.</p>
+<p>Durante este tiempo, mi esposa tuvo que ser sometida a dos intervenciones quirúrgicas. Como ocurre en muchas familias cuando la salud se convierte en una preocupación constante, la atención se concentró de manera inevitable en lo verdaderamente importante. Las consultas médicas, los traslados, la recuperación, la incertidumbre de no saber cuándo terminaría todo y los gastos inesperados que ese tipo de situaciones generan ocuparon el espacio que normalmente reservo para la lectura, la investigación y la escritura.</p>
+<p>Cuidar a quien se ama no requiere justificación. Pero sí merece ser nombrado, porque forma parte de lo que ha ocurrido durante este silencio y porque es, en el fondo, una de las razones por las que vale la pena seguir construyendo proyectos como este.</p>
+<p>Para quienes llegan por primera vez: soy periodista, nacido en Costa Rica y criado en Venezuela —las dos son mis patrias—. El ejercicio del periodismo me llevó con el tiempo hacia el marketing estratégico, y fue el amor genuino por la tecnología lo que abrió las puertas hacia la ciberseguridad y las redes comunitarias. Me interesa la geopolítica, la política y los procesos que moldean nuestro tiempo. Eso es lo que se escribe aquí.</p>
+<p>Como muchos profesionales de esta región y de esta época, no he tenido un empleo fijo. El freelance ha sido la constante. El emprendimiento, la válvula. En algunas épocas del año he recurrido a actividades comerciales paralelas como una forma práctica de mantenerme activo y generar ingresos mientras los proyectos profesionales maduran.</p>
+<p>La estabilidad laboral no ha llegado todavía. Y sin embargo, en ese camino irregular, Dios ha tenido la generosidad de premiarme con otras cosas: la familia, la salud recuperada, la claridad sobre lo que importa y la certeza de que el esfuerzo sostenido encuentra su lugar.</p>
+<p>Hoy se regresa con una mirada distinta. No necesariamente más optimista —el optimismo fácil nunca ha sido una herramienta útil para entender el mundo— pero sí más consciente. El periodismo sigue siendo la vocación. La curiosidad, intacta. El silencio termina aquí. Las historias continúan.</p>`
+  },
+
+  {
+    titulo:    "Malema: entre la provocación política, la justicia y las heridas abiertas de Sudáfrica",
+    categoria: "África · Política",
+    fecha:     "16 abr 2026",
+    resumen:   "La figura de Julius Malema es consecuencia directa de una promesa incumplida: tres décadas después del apartheid, la desigualdad persiste y él la amplifica.",
+    imagen:    "",
+    destacado: false,
+    contenido: `<p>La figura de Julius Malema se ha consolidado como una de las más disruptivas —y, al mismo tiempo, reveladoras— del escenario político sudafricano contemporáneo. Su ascenso no es un accidente ni un fenómeno aislado: es la consecuencia directa de una promesa incumplida. Tres décadas después del fin del apartheid, Sudáfrica sigue siendo uno de los países más desiguales del mundo, con un coeficiente de Gini entre los más altos a nivel global y una tasa de desempleo juvenil que supera ampliamente los promedios internacionales.</p>
+<p>En ese contexto de frustración estructural emerge Malema, no como un moderador del descontento, sino como su amplificador. Desde el liderazgo del Economic Freedom Fighters (EFF), ha construido un discurso que mezcla reivindicación histórica, nacionalismo económico y confrontación directa con las élites.</p>
+<h2>La condena del 16 de abril</h2>
+<p>La condena dictada este 16 de abril de 2026 introduce un elemento judicial que reconfigura, al menos parcialmente, su escenario político. Malema fue sentenciado a cinco años de prisión por delitos relacionados con la posesión y uso ilegal de armas —derivados de un incidente ocurrido en 2018—, aunque permanecerá en libertad bajo fianza mientras apela la decisión.</p>
+<p>Más allá del impacto inmediato, el fallo abre una interrogante política de mayor alcance. En Sudáfrica, una condena superior a 12 meses sin opción de multa puede implicar la pérdida del escaño parlamentario, lo que representaría un golpe significativo para el EFF y para la proyección institucional de Malema.</p>
+<h2>El trasfondo económico</h2>
+<p>Las políticas de empoderamiento económico negro (B-BBEE) buscan corregir desigualdades históricas mediante requisitos como la participación accionaria de grupos históricamente desfavorecidos en ciertos sectores. Estas medidas, aunque justificadas desde una lógica de reparación, generan tensiones en el presente.</p>
+<p>La controversia ha trascendido fronteras, amplificada por figuras como Elon Musk, quien denunció lo que calificó como un "genocidio blanco". La afirmación ha sido rechazada por el presidente Cyril Ramaphosa, que insiste en que la violencia en el país responde a una criminalidad estructural y generalizada.</p>
+<h2>Una disputa más profunda: el relato</h2>
+<p>Sudáfrica no solo enfrenta una crisis de desigualdad o de seguridad. Enfrenta una disputa más profunda: la del relato. Qué historia se cuenta sobre sí misma, quién la cuenta y con qué propósito. En ese terreno, figuras como Malema no son una anomalía, sino una consecuencia. Mientras esa tensión no encuentre un equilibrio, Sudáfrica seguirá oscilando entre la memoria de su pasado y la incertidumbre de su futuro.</p>`
+  },
+
+  {
+    titulo:    "Irán: el error de cálculo que encendió un conflicto sin control",
+    categoria: "Conflicto · Irán",
+    fecha:     "6 abr 2026",
+    resumen:   "Lo que fue concebido como una operación rápida derivó en una guerra que escapa del control de quienes la impulsaron. Un análisis de la dinámica del conflicto.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8fa1XADpb422CqyfIWG-HzwQBjI_ET_NsIcow9tjaylMqQ2hJ1oU8xtAK1N0cftQvcjt_29AlhDpbQzrJ_AKnnrqNqxpX9I7Q648R1j4aVY260W4ZBRPKYyJmzCrs0WUFxr5l8DBYNRBKp0H-k8U1m3iEL-Ach-PEDu4tok3zVKjTJ6NtJ_nopQwzdTU/w640-h350/Ir%C3%A1n%20en%20llamas.jpeg",
+    destacado: false,
+    contenido: `<p><em>Lo que fue concebido como una operación rápida, precisa y con objetivos limitados ha derivado en un escenario muy distinto: una guerra que no termina, que se transforma y que comienza a escapar del control de quienes la impulsaron.</em></p>
+<h2>El error de cálculo</h2>
+<p>La ofensiva inicial respondió a una lógica estratégica que, sobre el papel, parecía sólida. Washington y Tel Aviv apostaron por una operación de alto impacto contra infraestructuras clave, centros de mando y figuras relevantes del aparato iraní. La idea era clara: alterar el equilibrio interno del régimen mediante un golpe rápido que limitara su capacidad de respuesta.</p>
+<p>Irán no es un actor convencional. Su capacidad para absorber impactos, reorganizar su cadena de mando y mantener cohesión interna ha sido subestimada. Lejos de colapsar, el régimen reaccionó con rapidez, ajustó su estrategia y desplazó el conflicto hacia terrenos menos previsibles. El error no fue de ejecución, sino de diagnóstico.</p>
+<h2>La guerra que no terminó</h2>
+<p>La respuesta iraní no ha buscado una victoria inmediata, sino modificar las condiciones del conflicto. En lugar de una confrontación directa, Teherán ha optado por una estrategia de desgaste, basada en la dispersión de frentes y el uso de herramientas asimétricas. Misiles, drones y ataques selectivos han ampliado el alcance de la guerra más allá del territorio iraní.</p>
+<h2>Un conflicto sin salida clara</h2>
+<p>Uno de los rasgos más característicos de la situación actual es la ausencia de una salida evidente. Para Estados Unidos e Israel, una escalada mayor implicaría riesgos militares, económicos y políticos difíciles de gestionar. Para Irán, una retirada o concesión sustancial supondría un debilitamiento de su posición regional y de su legitimidad interna.</p>
+<h2>Lo que viene</h2>
+<p>A corto y mediano plazo, el escenario más probable no es una resolución, sino una prolongación. El conflicto tiende a estabilizarse en una forma intermedia: episodios de escalada seguidos de fases de relativa calma, sin un cierre definitivo.</p>
+<p>Cuando una guerra deja de estar guiada por objetivos claros y pasa a sostenerse por la imposibilidad de terminarla, deja de ser un instrumento de poder y se convierte en una fuente permanente de incertidumbre. Oriente Próximo conoce bien ese tipo de conflictos. La diferencia, esta vez, es que sus efectos ya no se limitan a la región.</p>`
+  },
+
+  {
+    titulo:    "Las caras de Trump y un orden mundial en fractura",
+    categoria: "Geopolítica · Análisis",
+    fecha:     "17 mar 2026",
+    resumen:   "El regreso de Trump al poder profundiza una transformación global: el debilitamiento del orden liberal y su sustitución por una dinámica transaccional.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRzsTdN7chBhAAV9vbP4faX4d8XdhV6Dw_JjBn6RmhReOkiaB2WTI1p4K3CgVxyFTeNag17K19PY9qoz_aWYKOxwUi2Zh6_laJv75E8CL8dDG8PO3c8WCcxv2QC_K2b9kmHRaZMKgn5PDeAGB28lEturSRQZyKcKQaIx2ZVIWz9Hngrv3-_un2IQZyALs/w400-h400/Trump%20y%20el%20orden%20mundial.png",
+    destacado: false,
+    contenido: `<p>La figura de Donald Trump ha dejado de ser un actor político disruptivo en el plano interno estadounidense para convertirse en una fuerza que incide directamente en la reconfiguración del sistema internacional. Su regreso al poder no solo confirma una tendencia política doméstica, sino que profundiza una transformación global que ya estaba en marcha: el debilitamiento del orden liberal surgido tras la Guerra Fría.</p>
+<h2>Ucrania: el giro estratégico</h2>
+<p>La guerra en Ucrania ilustra con claridad esta mutación. Desde la invasión ordenada por Vladimir Putin en 2022, el apoyo estadounidense fue determinante para sostener la resistencia de Kiev, acumulando compromisos que superan los 180.000 millones de dólares. No obstante, bajo la nueva administración, ese respaldo ha experimentado un giro sustancial. La ayuda directa se ha reducido de forma drástica y, en su lugar, se ha privilegiado un enfoque orientado a la negociación.</p>
+<h2>La OTAN se transforma</h2>
+<p>Por primera vez en su historia, los 32 miembros de la OTAN han alcanzado el objetivo del 2% del PIB en gasto en defensa, impulsados tanto por la amenaza rusa como por la presión directa de Washington. Sin embargo, este cumplimiento no ha reforzado necesariamente la cohesión política de la alianza. La seguridad colectiva ya no se percibe como un compromiso automático, sino como una responsabilidad que cada país debe sostener por sí mismo.</p>
+<h2>Venezuela: ruptura forzada</h2>
+<p>En América Latina, el caso de Nicolás Maduro marca un punto de inflexión. Tras su captura en enero de 2026 en una operación liderada por Estados Unidos, el escenario venezolano entró en una fase de transición incierta. Las sanciones económicas que durante años asfixiaron al país y provocaron una contracción superior al 75% del PIB entre 2013 y 2020 ya no operan en el mismo contexto.</p>
+<h2>Un sistema que se reconfigura</h2>
+<p>El sistema internacional no se derrumba de manera abrupta. Se reconfigura, se adapta y, en ese proceso, deja atrás muchas de las certezas que lo definieron durante décadas. Lo que emerge en su lugar es un escenario más incierto, donde las reglas ya no son incuestionables y donde el poder, en sus distintas formas, vuelve a ocupar un lugar determinante en la definición del orden global.</p>`
+  },
+
+  {
+    titulo:    "Ormuz bajo presión: la estrategia de Irán para extender la guerra en el Golfo",
+    categoria: "Geopolítica · Conflicto",
+    fecha:     "12 mar 2026",
+    resumen:   "Una quinta parte del petróleo mundial pasa por el Estrecho de Ormuz. Lo que ocurra allí deja de ser regional: amenaza con transformar el Golfo Pérsico en un escenario de presión estratégica global.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia9oBioo3LFAmv8i8R0Jul3fVGghn66N9iYTMHc7edLgq8kXc__NYgphAbzgDcQB1Xjx5FaOUXUBDh8xmTdqFni0xymKoYz7rUkZlDnXEIS8mw1EDyrNPk4CYo9BW7Gz0szX0nfLLTQ4Nag6lJau967F9rQXzCmup0Lu1RME8Qk6l4mjVzHPbya_e0ysY/w640-h426/Estrecho%20Ormuz%20guerra.png",
+    destacado: false,
+    contenido: `<p><em>La tensión entre Irán, Estados Unidos e Israel comienza a proyectarse más allá de sus frentes directos y amenaza con transformar el Golfo Pérsico en un escenario de presión estratégica global. En el centro de esa disputa se encuentra el Estrecho de Ormuz.</em></p>
+<p>La guerra rara vez anuncia con claridad el momento en que comienza a expandirse. A veces lo hace en silencio, a través de pequeños episodios que parecen aislados: un dron interceptado en el cielo del Golfo, un buque petrolero atacado en alta mar, un misil lanzado contra una base militar lejana del frente principal. Pero cuando esos episodios empiezan a repetirse, el mensaje es otro: el conflicto ya no está contenido.</p>
+<h2>El factor decisivo: el Estrecho de Ormuz</h2>
+<p>Por ese corredor marítimo circula aproximadamente una quinta parte del petróleo que se comercializa cada día en el mundo. Es uno de los cuellos de botella energéticos más importantes del planeta. Cuando esa ruta entra en riesgo, el conflicto deja de ser regional. Se convierte en una preocupación global.</p>
+<h2>La estrategia iraní: elevar el costo del conflicto</h2>
+<p>Ante la superioridad militar estadounidense, Irán ha desarrollado una estrategia que muchos analistas describen como una forma de guerra de desgaste. En lugar de enfrentarse directamente a Estados Unidos en un conflicto convencional, Teherán busca ampliar el escenario de tensión para aumentar progresivamente el costo del enfrentamiento.</p>
+<p>El uso de drones, misiles de medio alcance y operaciones indirectas permite mantener una presión constante sin desencadenar necesariamente una confrontación directa de gran escala. El objetivo no parece ser una victoria militar rápida, sino aumentar progresivamente el costo político, económico y militar del conflicto.</p>
+<h2>El impacto global</h2>
+<p>La economía mundial podría verse profundamente afectada si el tránsito marítimo en el estrecho se interrumpe. Un bloqueo prolongado podría provocar aumentos significativos en el precio del petróleo, presiones inflacionarias y turbulencias en los mercados financieros internacionales.</p>
+<p>La región parece avanzar sobre una línea extremadamente delgada. Estados Unidos intenta contener a Irán sin provocar una guerra abierta de gran escala. Irán intenta elevar el costo del conflicto sin desencadenar una intervención militar total. Entre ambos movimientos se encuentran los países del Golfo y una economía global profundamente dependiente de la estabilidad de esa región.</p>`
+  },
+
+  {
+    titulo:    "Cuba al límite: cuando la energía deja de ser política",
+    categoria: "Latinoamérica · Cuba",
+    fecha:     "9 feb 2026",
+    resumen:   "Durante casi dos décadas la estabilidad energética de Cuba dependió de un acuerdo geopolítico con Venezuela. Ese esquema colapsó y la isla enfrenta ahora su crisis energética más grave en décadas.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz-3EyYvYbp9LN-jiCvx7V5CspoXAhEKPeXt8JXuCma8I7mY0w69vP0ZboPolXVIQ5zPzllhajRjW9qBHV6k2onLP61KvWuTL7OuKsZGumq19A2-w7k_GCmG_CttiycZr0TsR6rIM5Uh9H-GFb341F8jtTUTzvHw5h2NbWR4uRLLLlvQVyyvzsFcaJV7M/w640-h362/Cuba1.jpg",
+    destacado: false,
+    contenido: `<p>Durante casi dos décadas, la estabilidad energética de Cuba no dependió de su capacidad productiva, ni de reformas internas, ni de una inserción competitiva en los mercados internacionales. Dependió, esencialmente, de un acuerdo geopolítico: el suministro preferencial de petróleo venezolano.</p>
+<p>En su punto más alto, entre 2010 y 2014, Venezuela llegó a enviar a Cuba entre <strong>90.000 y 115.000 barriles diarios</strong> de crudo y derivados. No se trataba de una relación comercial convencional. Parte de ese petróleo se pagaba con servicios profesionales, otra parte mediante esquemas de crédito blando. Ese petróleo no solo alimentó termoeléctricas y vehículos. Funcionó como un <strong>amortiguador político y económico</strong>.</p>
+<h2>El verdadero punto de quiebre</h2>
+<p>El endurecimiento del contexto internacional y, de manera decisiva, el regreso de <strong>Donald Trump a la presidencia de Estados Unidos</strong> marcaron el final de cualquier margen de tolerancia. Washington dejó claro que no permitiría esquemas energéticos paralelos ni subsidios encubiertos que mantuvieran con vida a economías aliadas fuera de las reglas del mercado.</p>
+<p>En ese escenario, el petróleo venezolano dejó de ser solo escaso: <strong>se volvió comercialmente inviable</strong>. Para Cuba, esto significó algo más profundo que la pérdida de un proveedor. Implicó el colapso de un modelo energético basado en la excepción política.</p>
+<h2>El impacto en 2026</h2>
+<p>En <strong>febrero de 2026</strong>, amplias zonas del país enfrentan <strong>apagones de entre 15 y 20 horas diarias</strong>, con un déficit eléctrico que ha rozado los <strong>2.000 megavatios en picos de demanda</strong>. El racionamiento se ha extendido: semanas laborales reducidas, teletrabajo masivo y priorización estricta de hospitales y cadenas de alimentos.</p>
+<p>El problema es circular y profundamente perverso. Cuba necesita turistas para obtener ingresos con los que importar energía. Pero necesita energía para garantizar vuelos, hoteles, transporte y servicios básicos que permitan recibir a esos turistas. La escasez de combustible rompe ese equilibrio y empuja al país a una <strong>espiral descendente</strong>.</p>
+<h2>Una frontera que se estrecha</h2>
+<p>La crisis energética cubana, por tanto, no es el inicio de un problema, sino <strong>su desenlace provisional</strong>. Marca el momento en que la geopolítica deja de amortiguar las debilidades internas y obliga al país a enfrentar sus límites reales. Mientras no aparezca una fuente de suministro estable y financiable, esa frontera seguirá estrechándose.</p>`
+  },
+
+  {
+    titulo:    "La guerra oculta que está destruyendo África",
+    categoria: "África · Conflicto",
+    fecha:     "13 feb 2026",
+    resumen:   "Mientras el mundo mira Ucrania y Gaza, una pugna silenciosa entre Arabia Saudita y Emiratos Árabes Unidos reconfigura el Mar Rojo y el Cuerno de África con consecuencias devastadoras.",
+    imagen:    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI2vZjQyLFQgBEMrFNLOl0QvNe916sCu7hGyc88Uw-QxI1oUvmS0XQoKIS0GRpyOhlPF0TZOTu4IP7rTSObq9DHjlE1HCp6PWBxcL0u9US61IEHYDFeWUseCMQG_cqZCu2tupJ8TAUmPKjPqAHO4mepIX-SAvopzP_-ih4vNHKIT9DWmAWbZQ-f5hW6lM/w640-h350/Africa.jpeg",
+    destacado: false,
+    contenido: `<p>Mientras el mundo fija la mirada en Ucrania y Gaza, una confrontación mucho menos visible —pero no por ello menos decisiva— está reconfigurando una de las arterias comerciales más críticas del planeta: el Mar Rojo y el Cuerno de África.</p>
+<p>No hay declaraciones formales de guerra ni frentes militares claramente definidos. Lo que existe es una pugna silenciosa por poder e influencia entre Arabia Saudita y Emiratos Árabes Unidos, librada a través de financiamiento indirecto, control de infraestructuras estratégicas y alianzas opacas con actores locales.</p>
+<h2>El tablero estratégico del Mar Rojo</h2>
+<p>El Mar Rojo y el estrecho de Bab el-Mandeb concentran entre el 10 y el 15% del comercio marítimo mundial. Por estas rutas circulan hidrocarburos del Golfo, granos hacia Europa y Asia y suministros energéticos esenciales. Cualquier disrupción en este corredor impacta precios globales, cadenas logísticas y estabilidad política más allá de la región.</p>
+<h2>Dos modelos de poder enfrentados</h2>
+<p>Arabia Saudita ha optado por una estrategia centrada en la estabilidad estatal. Su enfoque privilegia el respaldo a gobiernos centrales reconocidos y la mediación diplomática. Emiratos Árabes Unidos, en cambio, ha desplegado una estrategia más pragmática: prioriza el control de activos estratégicos —puertos, aeropuertos, minas— incluso en contextos de fragmentación institucional.</p>
+<p>Sudán se ha convertido en el laboratorio más crudo de esta rivalidad. Tras el colapso de la transición posterior a Omar al Bashir, el país quedó atrapado en una guerra civil entre las Fuerzas Armadas Sudanesas y las Fuerzas de Apoyo Rápido (RSF). Informes del Panel de Expertos de la ONU han documentado el flujo de apoyo externo a las RSF, con Emiratos Árabes Unidos señalado como actor clave.</p>
+<h2>Somalia y el punto de quiebre</h2>
+<p>En Somalia, la confrontación alcanzó un punto de quiebre en enero de 2026. El gobierno federal rompió todos sus acuerdos con Emiratos Árabes Unidos, canceló concesiones portuarias y ordenó la expulsión de personal militar emiratí. Somalia se alineó entonces con el eje saudí-egipcio-turco, reforzando una visión de seguridad regional basada en la centralidad del Estado.</p>
+<h2>El costo real</h2>
+<p>Más allá de las maniobras diplomáticas, la guerra invisible que se libra en el Cuerno de África tiene consecuencias devastadoras para la población civil. El flujo constante de armas, la financiación de milicias y la competencia entre potencias externas han erosionado aún más a Estados ya frágiles.</p>
+<p>Si la comunidad internacional sigue mirando hacia otro lado, esta guerra oculta no solo destruirá el Cuerno de África: erosionará la estabilidad de rutas globales y alimentará nuevas crisis migratorias y de seguridad.</p>`
+  }
+
+]; // ← FIN DE LA LISTA DE ARTÍCULOS
+
+/* ============================================================
+   MOTOR DEL BLOG — NO MODIFICAR
+   ============================================================ */
+
+const SIDEBAR_HTML = `
+  <div class='widget'>
+    <span class='widget-title'>Estadísticas del blog</span>
+    <div class='about-widget' style='text-align:center'>
+      <div style='font-size:2rem;font-weight:900;color:var(--red)' class='contador-visitas'>—</div>
+      <div style='font-size:.75rem;color:var(--gray);margin-top:.3rem'>visitas desde este dispositivo</div>
+    </div>
+  </div>
+  <div class="widget">
+    <span class="widget-title">Sobre el autor</span>
+    <div class="about-widget">
+      <strong>Francisco Veracoechea</strong>
+      Periodista nacido en Costa Rica y criado en Venezuela. Geopolítica, política internacional y economía. Más de dos décadas en el oficio.
+      <div class="about-social">
+        <a href="https://x.com/opinionFV" target="_blank">X @opinionFV</a>
+        <a href="https://www.tiktok.com/@newsweek_latam" target="_blank">TikTok</a>
+        <a href="mailto:endirectofv@gmail.com">Correo</a>
+      </div>
+    </div>
+  </div>
+  <div class="widget">
+    <span class="widget-title">Archivo</span>
+    <ul class="archive-list">
+      <li><a href="https://newslatinoamericano.blogspot.com/2026/06/" target="_blank">Junio 2026 <span class="arch-count">2</span></a></li>
+      <li><a href="https://newslatinoamericano.blogspot.com/2026/04/" target="_blank">Abril 2026 <span class="arch-count">2</span></a></li>
+      <li><a href="https://newslatinoamericano.blogspot.com/2026/03/" target="_blank">Marzo 2026 <span class="arch-count">4</span></a></li>
+      <li><a href="https://newslatinoamericano.blogspot.com/2026/02/" target="_blank">Febrero 2026 <span class="arch-count">7</span></a></li>
+      <li><a href="https://newslatinoamericano.blogspot.com/2026/01/" target="_blank">Enero 2026 <span class="arch-count">4</span></a></li>
+    </ul>
+  </div>
+  <div class="widget">
+    <span class="widget-title">Apoyar este trabajo</span>
+    <div class="support-widget">
+      <p>El periodismo independiente requiere tiempo y dedicación.</p>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=7TNKF5WCNFUX8" target="_blank" class="support-btn">Donar por PayPal</a>
+      <a href="https://www.binance.com/es-LA/my/payment/dashboard" target="_blank" class="support-btn outline">Donar por Binance</a>
+    </div>
+  </div>
+  <div class="widget">
+    <span class="widget-title">Servicios</span>
+    <div class="about-widget">
+      ¿Necesita cobertura periodística o monitoreo de medios?<br><br>
+      <a href="https://mediawatchlatam.github.io" target="_blank" style="color:var(--red);font-weight:700;text-decoration:none;font-size:.82rem">Ver mis servicios →</a>
+    </div>
+  </div>`;
+
+function img(url, alt, cls) {
+  if (!url) return `<div class="${cls} img-ph" style="height:${cls==='list-img'?'80px':cls==='side-img'?'110px':cls==='col-img'?'140px':'280px'}">📰</div>`;
+  return `<img class="${cls}" src="${url}" alt="${alt}" onerror="this.outerHTML='<div class=\'${cls} img-ph\' style=\'height:${cls==='list-img'?'80':cls==='side-img'?'110':cls==='col-img'?'140':'280'}px\'>📰</div>'"/>`;
+}
+
+function abrirArticulo(idx) {
+  const a = ARTICULOS[idx];
+  document.getElementById('av-kicker').textContent  = a.categoria;
+  document.getElementById('av-titulo').textContent  = a.titulo;
+  document.getElementById('av-deck').textContent    = a.resumen;
+  document.getElementById('av-fecha').textContent   = a.fecha;
+  const im = document.getElementById('av-imagen');
+  if (a.imagen) { im.src = a.imagen; im.alt = a.titulo; im.style.display = 'block'; }
+  else { im.style.display = 'none'; }
+  document.getElementById('av-cuerpo').innerHTML    = a.contenido;
+  document.getElementById('sidebar-article').innerHTML = SIDEBAR_HTML;
+  document.getElementById('listing-view').style.display  = 'none';
+  document.getElementById('article-view').style.display  = 'block';
+  window.scrollTo(0,0);
+  history.pushState({view:'article', idx}, '', '#articulo-'+idx);
+}
+
+function mostrarListado() {
+  document.getElementById('listing-view').style.display  = 'block';
+  document.getElementById('article-view').style.display  = 'none';
+  window.scrollTo(0,0);
+  history.pushState({view:'listing'}, '', window.location.pathname);
+}
+
+window.addEventListener('popstate', e => {
+  if (e.state && e.state.view === 'article') abrirArticulo(e.state.idx);
+  else { 
+    document.getElementById('listing-view').style.display = 'block';
+    document.getElementById('article-view').style.display = 'none';
+    window.scrollTo(0,0);
+  }
+});
+
+function renderAll() {
+  const dest    = ARTICULOS.find(a => a.destacado);
+  const resto   = ARTICULOS.filter(a => !a.destacado);
+  const destIdx = ARTICULOS.indexOf(dest);
+
+  // Breaking bar
+  document.getElementById('breaking-txt').textContent = dest ? dest.titulo + ': ' + dest.resumen.substring(0,90) + '...' : '';
+
+  // Destacado
+  if (dest) {
+    const s1 = ARTICULOS.indexOf(resto[0]);
+    const s2 = ARTICULOS.indexOf(resto[1]);
+    document.getElementById('featured-slot').innerHTML = `
+      <div class="featured-grid">
+        <div class="featured-main">
+          ${img(dest.imagen, dest.titulo, 'featured-img')}
+          <div class="featured-body">
+            <p class="art-kicker">${dest.categoria} · ${dest.fecha}</p>
+            <h2>${dest.titulo}</h2>
+            <p class="deck">${dest.resumen}</p>
+            <p class="art-byline">Por <strong>Francisco Veracoechea</strong> | News LATAM &nbsp;·&nbsp;
+              <span class="read-link" onclick="abrirArticulo(${destIdx})">Leer reportaje completo →</span>
+            </p>
+          </div>
+        </div>
+        <div class="featured-secondary">
+          ${resto.slice(0,2).map((s,i) => `
+            <div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
+              <p class="art-kicker">${s.categoria} · ${s.fecha}</p>
+              ${img(s.imagen, s.titulo, 'side-img')}
+              <h3>${s.titulo}</h3>
+              <p>${s.resumen}</p>
+            </div>`).join('')}
+        </div>
+      </div>`;
+  }
+
+  // Grid de 3
+  const grid3 = resto.slice(2,5);
+  document.getElementById('grid-slot').innerHTML = `
+    <div class="three-col">
+      ${grid3.map(a => `
+        <div class="col-art" onclick="abrirArticulo(${ARTICULOS.indexOf(a)})">
+          <p class="art-kicker">${a.categoria}</p>
+          ${img(a.imagen, a.titulo, 'col-img')}
+          <h3>${a.titulo}</h3>
+          <p>${a.resumen}</p>
+          <span class="art-date">${a.fecha}</span>
+        </div>`).join('')}
+    </div>`;
+
+  // Lista
+  const lista = resto.slice(5);
+  document.getElementById('lista-slot').innerHTML = lista.map(a => `
+    <div class="list-art" onclick="abrirArticulo(${ARTICULOS.indexOf(a)})">
+      ${img(a.imagen, a.titulo, 'list-img')}
+      <div class="list-body">
+        <span class="art-kicker">${a.categoria}</span>
+        <h4>${a.titulo}</h4>
+        <p>${a.resumen}</p>
+        <span class="meta">${a.fecha} · Francisco Veracoechea</span>
+      </div>
+    </div>`).join('');
+
+  // Sidebars
+  document.getElementById('sidebar-listing').innerHTML  = SIDEBAR_HTML;
+  document.getElementById('sidebar-article').innerHTML  = SIDEBAR_HTML;
+  // Actualizar contador después de renderizar el sidebar
+  contarVisita();
+
+  // Fecha
+  document.getElementById('hoy-fecha').textContent =
+    new Date().toLocaleDateString('es-CR',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+}
+
+document.addEventListener('DOMContentLoaded', renderAll);
+</script>
+
+
+<!-- SOBRE MÍ -->
+<div id="sobremi-view" style="display:none">
+  <div class="page-wrap" style="max-width:800px">
+    <button class="art-back" onclick="mostrarListado()">← Volver al inicio</button>
+    <div style="border-bottom:3px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2rem">
+      <p class="art-kicker">El periodista detrás de News LATAM</p>
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;line-height:1.15;color:var(--ink);margin-bottom:.8rem">Acerca de mí</h1>
+    </div>
+    <div style="display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:start">
+      <div style="text-align:center">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG6ar_68u7oRxVYarCCCiPUvOIN9wOLgy69hwBT8t_3QH0x6At-v02xQhGzaoMs-x_Y0ZD0GlgSScfrAOqn5F2Y3wV9nUmbXc-U8kKhxiaIL7sNWpNAqKyqc4PXe1-hzfH_ZBFwhwdjSp0Z14qbPsAb-IzKnEqDnfy74hpR8XlJfEoWFF4Hzwy6eoUc6w/w331-h400/FV.png" alt="Francisco Veracoechea" style="width:100%;border-radius:4px;"/>
+        <div style="margin-top:1rem;display:flex;flex-direction:column;gap:.5rem">
+          <a href="https://x.com/opinionFV" target="_blank" style="background:var(--ink);color:var(--white);padding:.4rem;font-size:.75rem;font-weight:600;text-decoration:none;letter-spacing:.06em;text-transform:uppercase;display:block">X @opinionFV</a>
+          <a href="https://www.tiktok.com/@newsweek_latam" target="_blank" style="background:var(--ink);color:var(--white);padding:.4rem;font-size:.75rem;font-weight:600;text-decoration:none;letter-spacing:.06em;text-transform:uppercase;display:block">TikTok @newsweek_latam</a>
+          <a href="mailto:endirectofv@gmail.com" style="background:var(--red);color:var(--white);padding:.4rem;font-size:.75rem;font-weight:600;text-decoration:none;letter-spacing:.06em;text-transform:uppercase;display:block">endirectofv@gmail.com</a>
+          <a href="https://wa.me/50687192443" target="_blank" style="background:var(--red);color:var(--white);padding:.4rem;font-size:.75rem;font-weight:600;text-decoration:none;letter-spacing:.06em;text-transform:uppercase;display:block">+506 8719-2443</a>
+        </div>
+      </div>
+      <div class="art-body">
+        <p>Soy periodista, nacido en Costa Rica y criado en Venezuela —las dos son mis patrias—. El ejercicio del periodismo me llevó con el tiempo hacia el marketing estratégico, y fue el amor genuino por la tecnología lo que abrió las puertas hacia la ciberseguridad y las redes comunitarias.</p>
+        <p>Me interesa la geopolítica, la política y los procesos que moldean nuestro tiempo. Eso es lo que se escribe aquí, en <strong>News LATAM</strong>: análisis riguroso, contexto que la noticia merece y una perspectiva propia construida en más de dos décadas de oficio.</p>
+        <h2>Servicios profesionales</h2>
+        <p>Además del periodismo analítico, ofrezco servicios freelance de cobertura de eventos, elaboración de notas de prensa, reportajes, publirreportajes y monitoreo de medios nacionales e internacionales (prensa escrita, radio y televisión).</p>
+        <p>Trabajo con base en Costa Rica y tengo disponibilidad para trasladarme a cualquier zona del país o al extranjero según el proyecto.</p>
+        <p>Si su empresa, organización o institución necesita cobertura profesional o seguimiento de medios, con gusto conversamos.</p>
+        <p><a href="https://mediawatchlatam.github.io" target="_blank" style="color:var(--red);font-weight:700">Ver página de servicios completa →</a></p>
+        <h2>Apoyar este trabajo</h2>
+        <p>News LATAM es un proyecto de periodismo independiente. Si el contenido le aporta valor, puede apoyarlo:</p>
+        <p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=7TNKF5WCNFUX8" target="_blank" style="color:var(--red);font-weight:700">Donar por PayPal</a> &nbsp;·&nbsp;
+          <a href="https://www.binance.com/es-LA/my/payment/dashboard" target="_blank" style="color:var(--red);font-weight:700">Donar por Binance</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+/* ── FILTROS POR CATEGORÍA ── */
+function filtrarPor(cat) {
+  // Actualizar nav activo
+  ['nav-inicio','nav-conflicto','nav-latam','nav-actualidad','nav-sobre'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+  const navMap = {'conflicto':'nav-conflicto','americalatina':'nav-latam','actualidad':'nav-actualidad'};
+  if (navMap[cat]) document.getElementById(navMap[cat]).classList.add('active');
+
+  // Ocultar sobre mí
+  document.getElementById('sobremi-view').style.display = 'none';
+  document.getElementById('listing-view').style.display = 'block';
+  document.getElementById('article-view').style.display = 'none';
+
+  // Normalizar acentos para comparar sin problemas
+  function norm(s){ return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  let filtrados;
+  if (cat === 'actualidad') {
+    // Actualidad muestra todos los artículos como feed de noticias recientes
+    filtrados = [...ARTICULOS];
+  } else if (cat === 'americalatina') {
+    // América Latina: coincide con latinoamérica, cuba, venezuela, costa rica, latinoamerica
+    const keywords = ['latinoam','cuba','venezuela','costa rica','latin'];
+    filtrados = ARTICULOS.filter(a => keywords.some(k => norm(a.categoria).includes(k)));
+  } else {
+    filtrados = ARTICULOS.filter(a => norm(a.categoria).includes(norm(cat)));
+  }
+
+  const titles = {'conflicto':'Conflicto','americalatina':'América Latina','actualidad':'Actualidad'};
+  const secTitle = titles[cat] || (cat.charAt(0).toUpperCase() + cat.slice(1));
+  document.getElementById('featured-slot').innerHTML = `<div class="section-rule"><span class="section-rule-label">Categoría: ${secTitle}</span><div class="section-rule-line"></div></div>`;
+
+  if (filtrados.length === 0) {
+    document.getElementById('grid-slot').innerHTML = '<p style="color:var(--gray);padding:2rem 0">No hay artículos en esta categoría todavía.</p>';
+    document.getElementById('lista-slot').innerHTML = '';
+    return;
+  }
+
+  document.getElementById('grid-slot').innerHTML = `<div class="three-col">${filtrados.map(a => `
+    <div class="col-art" onclick="abrirArticulo(${ARTICULOS.indexOf(a)})">
+      <p class="art-kicker">${a.categoria}</p>
+      ${img(a.imagen, a.titulo, 'col-img')}
+      <h3>${a.titulo}</h3>
+      <p>${a.resumen}</p>
+      <span class="art-date">${a.fecha}</span>
+    </div>`).join('')}</div>`;
+  document.getElementById('lista-slot').innerHTML = '';
+  window.scrollTo(0,0);
+}
+
+/* ── SOBRE MÍ ── */
+function mostrarSobreMi() {
+  document.getElementById('listing-view').style.display  = 'none';
+  document.getElementById('article-view').style.display  = 'none';
+  document.getElementById('sobremi-view').style.display  = 'block';
+  ['nav-inicio','nav-conflicto','nav-iran','nav-africa'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+  document.getElementById('nav-sobre').classList.add('active');
+  window.scrollTo(0,0);
+}
+
+/* ── CONTADOR DE VISITAS (localStorage) ── */
+function contarVisita() {
+  let total = parseInt(localStorage.getItem('nwl_visitas') || '0') + 1;
+  localStorage.setItem('nwl_visitas', total);
+  // Actualizar todos los elementos con la clase contador-visitas
+  document.querySelectorAll('.contador-visitas').forEach(el => {
+    el.textContent = total.toLocaleString('es');
+  });
+  return total;
+}
+
+/* ── AJUSTE AL VOLVER AL INICIO ── */
+const _origMostrar = mostrarListado;
+window.mostrarListado = function() {
+  ['nav-conflicto','nav-iran','nav-africa','nav-sobre'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('active');
+  });
+  const ni = document.getElementById('nav-inicio');
+  if (ni) ni.classList.add('active');
+  document.getElementById('sobremi-view').style.display = 'none';
+  renderAll();
+  document.getElementById('listing-view').style.display = 'block';
+  document.getElementById('article-view').style.display = 'none';
+  window.scrollTo(0,0);
+  history.pushState({view:'listing'}, '', window.location.pathname);
+};
+
+</script>
+</body>
+</html>
