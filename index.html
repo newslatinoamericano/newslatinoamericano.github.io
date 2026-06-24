@@ -180,8 +180,8 @@
     <span class="ltitle">En vivo · Noticias del mundo</span>
     <span class="ltime" id="ltime"></span>
   </div>
-  <div class="live-grid" id="lgrid">
-    <div class="litem"><div class="litem-src">Cargando...</div></div>
+  <div class="live-grid" id="lgrid" style="padding:1rem 1.5rem">
+    <div style="color:rgba(255,255,255,.4);font-size:.78rem;letter-spacing:.06em">Cargando noticias internacionales...</div>
   </div>
 </div>
 
@@ -442,39 +442,45 @@ window.addEventListener('popstate',function(e){
 });
 
 /* NOTICIAS EN VIVO */
-function liveFromOwn(){
-  var g=document.getElementById('lgrid');
-  if(!g)return;
-  g.innerHTML=A.slice(0,4).map(function(a,i){
-    return '<div class="litem" onclick="openArt('+i+')" style="cursor:pointer">'+
-      '<div class="litem-src">News LATAM · '+a.f+'</div>'+
-      '<div class="litem-txt">'+a.t+'</div></div>';
-  }).join('');
-}
-
 function liveLoad(){
   var g=document.getElementById('lgrid');
   var tl=document.getElementById('ltime');
-  var url='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://feeds.bbci.co.uk/mundo/rss.xml')+'&count=8';
-  fetch(url)
-    .then(function(r){return r.json();})
-    .then(function(d){
-      if(d.status==='ok'&&d.items&&d.items.length){
-        g.innerHTML=d.items.slice(0,4).map(function(n){
-          return '<div class="litem"><div class="litem-src">BBC Mundo</div>'+
-            '<a href="'+n.link+'" target="_blank" rel="noopener"><div class="litem-txt">'+n.title+'</div></a></div>';
-        }).join('');
-        if(tl){try{tl.textContent=new Date().toLocaleTimeString('es-CR',{hour:'2-digit',minute:'2-digit'});}catch(e){}}
-      }
-    })
-    .catch(function(){/* mantener fallback propio */});
+  var fuentes=[
+    {n:'BBC Mundo',u:'https://feeds.bbci.co.uk/mundo/rss.xml'},
+    {n:'DW Español',u:'https://rss.dw.com/rdf/rss-es-all'},
+    {n:'Infobae',u:'https://www.infobae.com/feeds/rss/'}
+  ];
+  var base='https://api.rss2json.com/v1/api.json?count=6&rss_url=';
+  var todas=[];var done=0;
+  fuentes.forEach(function(f){
+    fetch(base+encodeURIComponent(f.u))
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(d.status==='ok'&&d.items){
+          d.items.forEach(function(n){todas.push({src:f.n,title:n.title,link:n.link,date:new Date(n.pubDate)});});
+        }
+      })
+      .catch(function(){})
+      .finally(function(){
+        done++;
+        if(done===fuentes.length){
+          if(todas.length===0){g.style.padding='1rem 1.5rem';g.innerHTML='<div style="color:rgba(255,255,255,.4);font-size:.78rem">No se pudo conectar con los medios. Intente de nuevo más tarde.</div>';return;}
+          todas.sort(function(a,b){return b.date-a.date;});
+          g.style.padding='0';
+          g.innerHTML=todas.slice(0,4).map(function(n){
+            return '<div class="litem"><div class="litem-src">'+n.src+'</div>'+
+              '<a href="'+n.link+'" target="_blank" rel="noopener"><div class="litem-txt">'+n.title+'</div></a></div>';
+          }).join('');
+          if(tl){try{tl.textContent=new Date().toLocaleTimeString('es-CR',{hour:'2-digit',minute:'2-digit'});}catch(e){}}
+        }
+      });
+  });
 }
 
 document.addEventListener('DOMContentLoaded',function(){
   document.getElementById('hdate').textContent=new Date().toLocaleDateString('es-CR',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
   render(A);
-  liveFromOwn();
-  setTimeout(liveLoad,2000);
+  setTimeout(liveLoad,500);
   setInterval(liveLoad,5*60*1000);
 });
 </script>
