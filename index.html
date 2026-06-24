@@ -140,7 +140,7 @@
     .footer-links a:hover{color:var(--red);}
     .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:1rem 2rem;text-align:center;font-size:.72rem;}
 
-    /* NOTICIAS EN VIVO */
+
     .live-section { background: var(--ink); padding: 0; margin-bottom: 3rem; border: 1px solid var(--rule); }
     .live-header { display: flex; align-items: center; gap: 1rem; padding: 0.8rem 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
     .live-dot { width: 10px; height: 10px; background: var(--red); border-radius: 50%; animation: pulse 1.5s infinite; flex-shrink: 0; }
@@ -159,6 +159,27 @@
     .live-item a { text-decoration: none; color: inherit; }
     .live-item a:hover .live-item-title { color: var(--white); }
     .live-loading { padding: 2rem; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.82rem; }
+
+    /* SIDEBAR NOTICIAS EN VIVO */
+    .main-with-live { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; margin-bottom: 3rem; }
+    .live-sidebar { background: var(--ink); border: 1px solid #222; border-radius: 0; }
+    .live-header { display: flex; align-items: center; gap: 0.7rem; padding: 0.8rem 1rem; border-bottom: 2px solid var(--red); }
+    .live-dot { width: 9px; height: 9px; background: var(--red); border-radius: 50%; animation: pulse 1.5s infinite; flex-shrink: 0; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .live-title { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--white); }
+    .live-updated { font-size: 0.62rem; color: rgba(255,255,255,0.35); margin-left: auto; }
+    .live-feed { list-style: none; max-height: 520px; overflow-y: auto; }
+    .live-feed::-webkit-scrollbar { width: 3px; }
+    .live-feed::-webkit-scrollbar-thumb { background: var(--red); }
+    .live-item { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s; }
+    .live-item:hover { background: rgba(255,255,255,0.04); }
+    .live-item a { text-decoration: none; }
+    .live-item-source { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 0.25rem; }
+    .live-item-title { font-size: 0.78rem; color: rgba(255,255,255,0.8); line-height: 1.4; }
+    .live-item:hover .live-item-title { color: var(--white); }
+    .live-item-time { font-size: 0.62rem; color: rgba(255,255,255,0.3); margin-top: 0.2rem; }
+    .live-loading { padding: 1.5rem; text-align: center; color: rgba(255,255,255,0.35); font-size: 0.78rem; }
+    @media(max-width:900px){ .main-with-live { grid-template-columns: 1fr; } }
     @media(max-width:900px){
       .featured-grid,.three-col,.body-grid,.art-grid{grid-template-columns:1fr;}
       .featured-main{border-right:none;border-bottom:1px solid var(--rule);}
@@ -202,18 +223,7 @@
 <div id="listing-view">
   <div class="page-wrap">
   
-  <!-- NOTICIAS EN VIVO -->
-  <div class="section-rule" style="margin-top:0"><span class="section-rule-label">🔴 En vivo · Noticias internacionales</span><div class="section-rule-line"></div></div>
-  <div class="live-section">
-    <div class="live-header">
-      <div class="live-dot"></div>
-      <span class="live-title">Actualización en tiempo real</span>
-      <span class="live-updated" id="live-time"></span>
-    </div>
-    <ul class="live-feed" id="live-feed">
-      <li class="live-loading">Cargando noticias...</li>
-    </ul>
-  </div>
+
   <div class="section-rule"><span class="section-rule-label">Análisis destacado</span><div class="section-rule-line"></div></div>
     <div id="featured-slot"></div>
     <div class="section-rule"><span class="section-rule-label">Análisis recientes</span><div class="section-rule-line"></div></div>
@@ -327,7 +337,7 @@ const ARTICULOS = [
     categoria: "África · Política",
     fecha:     "16 abr 2026",
     resumen:   "La figura de Julius Malema es consecuencia directa de una promesa incumplida: tres décadas después del apartheid, la desigualdad persiste y él la amplifica.",
-    imagen:    "",
+    imagen:    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Julius_Malema_2019.jpg/440px-Julius_Malema_2019.jpg",
     destacado: false,
     contenido: `<p>La figura de Julius Malema se ha consolidado como una de las más disruptivas —y, al mismo tiempo, reveladoras— del escenario político sudafricano contemporáneo. Su ascenso no es un accidente ni un fenómeno aislado: es la consecuencia directa de una promesa incumplida. Tres décadas después del fin del apartheid, Sudáfrica sigue siendo uno de los países más desiguales del mundo, con un coeficiente de Gini entre los más altos a nivel global y una tasa de desempleo juvenil que supera ampliamente los promedios internacionales.</p>
 <p>En ese contexto de frustración estructural emerge Malema, no como un moderador del descontento, sino como su amplificador. Desde el liderazgo del Economic Freedom Fighters (EFF), ha construido un discurso que mezcla reivindicación histórica, nacionalismo económico y confrontación directa con las élites.</p>
@@ -742,67 +752,98 @@ window.mostrarListado = function() {
 
 
 
+
 <script>
-/* NOTICIAS EN VIVO */
-async function cargarNoticias() {
-  var feed = document.getElementById("live-feed");
-  var timeEl = document.getElementById("live-time");
-  if (!feed) return;
+/* NOTICIAS EN VIVO - Infobae, BBC Mundo, CNN Español */
+var FEEDS_LIVE = [
+  { name: "Infobae",     url: "https://www.infobae.com/feeds/rss/" },
+  { name: "BBC Mundo",   url: "https://feeds.bbci.co.uk/mundo/rss.xml" },
+  { name: "CNN Español", url: "https://cnnespanol.cnn.com/feed/" }
+];
 
-  var fuentes = [
-    { name: "BBC Mundo",   url: "https://feeds.bbci.co.uk/mundo/rss.xml" },
-    { name: "DW Español",  url: "https://rss.dw.com/rdf/rss-es-all" },
-    { name: "RT Español",  url: "https://actualidad.rt.com/rss" }
-  ];
-
-  var noticias = [];
-
-  for (var i = 0; i < fuentes.length; i++) {
-    try {
-      var apiUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(fuentes[i].url) + "&count=6";
-      var res = await fetch(apiUrl);
-      var data = await res.json();
-      if (data && data.items) {
-        for (var j = 0; j < data.items.length; j++) {
-          noticias.push({
-            titulo: data.items[j].title,
-            link:   data.items[j].link,
-            fecha:  new Date(data.items[j].pubDate),
-            fuente: fuentes[i].name
-          });
-        }
+function parseXML(xmlStr, source) {
+  try {
+    var parser = new DOMParser();
+    var xml = parser.parseFromString(xmlStr, "text/xml");
+    var items = xml.querySelectorAll("item");
+    var result = [];
+    items.forEach(function(item) {
+      var title = item.querySelector("title");
+      var link  = item.querySelector("link");
+      var date  = item.querySelector("pubDate");
+      if (title && title.textContent.trim()) {
+        result.push({
+          titulo: title.textContent.trim(),
+          link:   link ? (link.textContent.trim() || link.nextSibling && link.nextSibling.textContent.trim() || "#") : "#",
+          fecha:  date ? new Date(date.textContent) : new Date(),
+          fuente: source
+        });
       }
-    } catch(e) {}
+    });
+    return result;
+  } catch(e) { return []; }
+}
+
+async function fetchFeed(feed) {
+  try {
+    var proxy = "https://api.allorigins.win/get?url=" + encodeURIComponent(feed.url);
+    var res = await fetch(proxy, { signal: AbortSignal.timeout(8000) });
+    var data = await res.json();
+    return parseXML(data.contents, feed.name);
+  } catch(e) {
+    try {
+      var proxy2 = "https://corsproxy.io/?" + encodeURIComponent(feed.url);
+      var res2 = await fetch(proxy2, { signal: AbortSignal.timeout(8000) });
+      var text = await res2.text();
+      return parseXML(text, feed.name);
+    } catch(e2) { return []; }
   }
+}
 
-  noticias.sort(function(a,b){ return b.fecha - a.fecha; });
+async function cargarNoticias() {
+  var feedEl = document.getElementById("live-feed");
+  var timeEl = document.getElementById("live-time");
+  if (!feedEl) return;
 
-  if (noticias.length === 0) {
-    feed.innerHTML = "<li class='live-loading'>No se pudieron cargar las noticias en este momento.</li>";
+  var todas = [];
+  var promesas = FEEDS_LIVE.map(function(f) { return fetchFeed(f); });
+  var resultados = await Promise.allSettled(promesas);
+  resultados.forEach(function(r) {
+    if (r.status === "fulfilled") todas = todas.concat(r.value);
+  });
+
+  todas.sort(function(a,b){ return b.fecha - a.fecha; });
+
+  if (todas.length === 0) {
+    feedEl.innerHTML = "<li class='live-loading'>Conectando con los medios...</li>";
+    setTimeout(cargarNoticias, 30000);
     return;
   }
 
   var html = "";
-  var max = Math.min(noticias.length, 15);
-  for (var k = 0; k < max; k++) {
-    var n = noticias[k];
-    var hora = n.fecha.toLocaleTimeString("es-CR", {hour:"2-digit", minute:"2-digit"});
+  var max = Math.min(todas.length, 20);
+  for (var i = 0; i < max; i++) {
+    var n = todas[i];
+    var hora = "";
+    try { hora = n.fecha.toLocaleTimeString("es-CR", {hour:"2-digit", minute:"2-digit"}); } catch(e) {}
     html += "<li class='live-item'>";
-    html += "<div class='live-item-time'>" + hora + "</div>";
-    html += "<div><a href='" + n.link + "' target='_blank' rel='noopener'>";
-    html += "<div class='live-item-title'>" + n.titulo + "</div></a>";
     html += "<div class='live-item-source'>" + n.fuente + "</div>";
-    html += "</div></li>";
+    html += "<a href='" + n.link + "' target='_blank' rel='noopener'>";
+    html += "<div class='live-item-title'>" + n.titulo + "</div></a>";
+    if (hora) html += "<div class='live-item-time'>" + hora + "</div>";
+    html += "</li>";
   }
-  feed.innerHTML = html;
+  feedEl.innerHTML = html;
 
   if (timeEl) {
-    timeEl.textContent = "Actualizado: " + new Date().toLocaleTimeString("es-CR", {hour:"2-digit", minute:"2-digit"});
+    try {
+      timeEl.textContent = new Date().toLocaleTimeString("es-CR", {hour:"2-digit", minute:"2-digit"});
+    } catch(e) {}
   }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  cargarNoticias();
+  setTimeout(cargarNoticias, 1500);
   setInterval(cargarNoticias, 5 * 60 * 1000);
 });
 </script>
