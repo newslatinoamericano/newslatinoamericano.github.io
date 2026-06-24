@@ -364,10 +364,11 @@ function norm(s) {
   return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
+function imgErr(el) { el.style.display = 'none'; }
 function mkImg(url, cls, h) {
-  if (!url) {
-    return '<div class="' + cls + ' img-ph" style="height:' + h + '">📰</div>';
-  }
+  if (!url) return '<div class="' + cls + ' img-ph" style="height:' + h + '">📰</div>';
+  return '<img class="' + cls + '" src="' + url + '" alt="" style="display:block" onerror="imgErr(this)">';
+}
   var ph = '<div class=\\"' + cls + ' img-ph\\" style=\\"height:' + h + '\\">📰</div>';
   return '<img class="' + cls + '" src="' + url + '" alt="" style="display:block" onerror="this.outerHTML=\'' + ph + '\'"/>';
 }
