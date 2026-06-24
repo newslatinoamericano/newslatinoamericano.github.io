@@ -174,15 +174,13 @@
 </div>
 
 <!-- NOTICIAS EN VIVO -->
-<div class="live-section">
+<div class="live-section" id="live-section" style="display:none">
   <div class="live-top">
     <div class="ldot"></div>
     <span class="ltitle">En vivo · Noticias del mundo</span>
     <span class="ltime" id="ltime"></span>
   </div>
-  <div class="live-grid" id="lgrid" style="padding:1rem 1.5rem">
-    <div style="color:rgba(255,255,255,.4);font-size:.78rem;letter-spacing:.06em">Cargando noticias internacionales...</div>
-  </div>
+  <div class="live-grid" id="lgrid"></div>
 </div>
 
 <!-- LISTADO -->
@@ -445,8 +443,42 @@ window.addEventListener('popstate',function(e){
 function liveLoad(){
   var g=document.getElementById('lgrid');
   var tl=document.getElementById('ltime');
+  var sec=document.getElementById('live-section');
   var fuentes=[
     {n:'BBC Mundo',u:'https://feeds.bbci.co.uk/mundo/rss.xml'},
+    {n:'DW Espa\u00f1ol',u:'https://rss.dw.com/rdf/rss-es-all'},
+    {n:'Infobae',u:'https://www.infobae.com/feeds/rss/'}
+  ];
+  var todas=[];var done=0;
+  fuentes.forEach(function(f){
+    var url='https://api.rss2json.com/v1/api.json?count=5&rss_url='+encodeURIComponent(f.u);
+    fetch(url)
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(d.status==='ok'&&d.items&&d.items.length){
+          d.items.forEach(function(n){todas.push({src:f.n,title:n.title,link:n.link});});
+        }
+      })
+      .catch(function(){})
+      .finally(function(){
+        done++;
+        if(done===fuentes.length){
+          if(todas.length===0){
+            if(sec)sec.style.display='none';
+            return;
+          }
+          if(sec)sec.style.display='block';
+          if(g){
+            g.innerHTML=todas.slice(0,4).map(function(n){
+              return '<div class="litem"><div class="litem-src">'+n.src+'</div>'+
+                '<a href="'+n.link+'" target="_blank" rel="noopener"><div class="litem-txt">'+n.title+'</div></a></div>';
+            }).join('');
+          }
+          if(tl){try{tl.textContent=new Date().toLocaleTimeString('es-CR',{hour:'2-digit',minute:'2-digit'});}catch(e){}}
+        }
+      });
+  });
+},
     {n:'DW Español',u:'https://rss.dw.com/rdf/rss-es-all'},
     {n:'Infobae',u:'https://www.infobae.com/feeds/rss/'}
   ];
