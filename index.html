@@ -337,7 +337,7 @@ const ARTICULOS = [
     categoria: "África · Política",
     fecha:     "16 abr 2026",
     resumen:   "La figura de Julius Malema es consecuencia directa de una promesa incumplida: tres décadas después del apartheid, la desigualdad persiste y él la amplifica.",
-    imagen:    "https://upload.wikimedia.org/wikipedia/commons/9/9f/Julius_Malema_2019.jpg",
+    imagen:    "",
     destacado: false,
     contenido: `<p>La figura de Julius Malema se ha consolidado como una de las más disruptivas —y, al mismo tiempo, reveladoras— del escenario político sudafricano contemporáneo. Su ascenso no es un accidente ni un fenómeno aislado: es la consecuencia directa de una promesa incumplida. Tres décadas después del fin del apartheid, Sudáfrica sigue siendo uno de los países más desiguales del mundo, con un coeficiente de Gini entre los más altos a nivel global y una tasa de desempleo juvenil que supera ampliamente los promedios internacionales.</p>
 <p>En ese contexto de frustración estructural emerge Malema, no como un moderador del descontento, sino como su amplificador. Desde el liderazgo del Economic Freedom Fighters (EFF), ha construido un discurso que mezcla reivindicación histórica, nacionalismo económico y confrontación directa con las élites.</p>
@@ -456,15 +456,14 @@ const ARTICULOS = [
 
 const SIDEBAR_HTML = `
   <div class='widget'>
-    <span class='widget-title'>🔴 Noticias en vivo</span>
-    <div style='background:var(--ink);padding:0;'>
-      <div style='display:flex;align-items:center;gap:.5rem;padding:.5rem .8rem;border-bottom:1px solid rgba(255,255,255,.1)'>
-        <div id='live-dot-w' style='width:8px;height:8px;background:var(--red);border-radius:50%;animation:pulse 1.5s infinite;flex-shrink:0'></div>
-        <span style='font-size:.62rem;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase'>Actualización continua</span>
-        <span id='live-time' style='font-size:.6rem;color:rgba(255,255,255,.3);margin-left:auto'></span>
-      </div>
-      <ul id='live-feed' style='list-style:none;max-height:380px;overflow-y:auto;'>
-        <li style='padding:1rem;text-align:center;color:rgba(255,255,255,.35);font-size:.75rem'>Cargando...</li>
+    <div style='background:var(--red);padding:.6rem 1rem;display:flex;align-items:center;gap:.6rem;'>
+      <div style='width:9px;height:9px;background:white;border-radius:50%;animation:pulse 1s infinite;flex-shrink:0'></div>
+      <span style='font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:white'>En vivo · Mundo</span>
+      <span id='live-time' style='font-size:.62rem;color:rgba(255,255,255,.7);margin-left:auto'></span>
+    </div>
+    <div style='background:#1a1a1a;'>
+      <ul id='live-feed' style='list-style:none;max-height:400px;overflow-y:auto;margin:0;padding:0'>
+        <li style='padding:1rem;text-align:center;color:rgba(255,255,255,.4);font-size:.75rem'>Cargando noticias...</li>
       </ul>
     </div>
   </div>
@@ -514,8 +513,9 @@ const SIDEBAR_HTML = `
   </div>`;
 
 function img(url, alt, cls) {
-  if (!url) return `<div class="${cls} img-ph" style="height:${cls==='list-img'?'80px':cls==='side-img'?'110px':cls==='col-img'?'140px':'280px'}">📰</div>`;
-  return `<img class="${cls}" src="${url}" alt="${alt}" onerror="this.outerHTML='<div class=\'${cls} img-ph\' style=\'height:${cls==='list-img'?'80':cls==='side-img'?'110':cls==='col-img'?'140':'280'}px\'>📰</div>'"/>`;
+  var h = cls==='list-img'?'80px':cls==='side-img'?'110px':cls==='col-img'?'140px':'280px';
+  if (!url) return '<div class="'+cls+' img-ph" style="height:'+h+'">📰</div>';
+  return '<img class="'+cls+'" src="'+url+'" alt="" onerror="this.style.display='none';var d=document.createElement('div');d.className=''+cls+' img-ph';d.style.height=''+h+'';d.innerHTML='📰';this.parentNode.insertBefore(d,this)"/>';
 }
 
 function abrirArticulo(idx) {
@@ -767,93 +767,84 @@ window.mostrarListado = function() {
 
 
 
+
 <script>
-/* NOTICIAS EN VIVO - Google News RSS via proxy */
-var LIVE_FEEDS = [
-  { name: "Internacional", url: "https://news.google.com/rss/headlines/section/topic/WORLD?hl=es-419&gl=US&ceid=US:es-419" },
-  { name: "Latinoamérica", url: "https://news.google.com/rss/headlines/section/geo/LAT?hl=es-419&gl=US&ceid=US:es-419" },
-  { name: "Política",      url: "https://news.google.com/rss/headlines/section/topic/POLITICS?hl=es-419&gl=US&ceid=US:es-419" }
+/* NOTICIAS EN VIVO */
+var RSS_FEEDS = [
+  { name: "BBC Mundo",   url: "https://feeds.bbci.co.uk/mundo/rss.xml" },
+  { name: "DW Español",  url: "https://rss.dw.com/rdf/rss-es-all" },
+  { name: "Infobae",     url: "https://www.infobae.com/feeds/rss/" }
 ];
 
-function parsearRSS(xmlStr, fuente) {
-  try {
-    var parser = new DOMParser();
-    var xml = parser.parseFromString(xmlStr, "text/xml");
-    var items = Array.from(xml.querySelectorAll("item"));
-    return items.slice(0, 7).map(function(item) {
-      var titulo = item.querySelector("title");
-      var link   = item.querySelector("link");
-      var fecha  = item.querySelector("pubDate");
-      return {
-        titulo: titulo ? titulo.textContent.replace(/ - [^-]+$/, "").trim() : "",
-        link:   link ? (link.nextSibling ? link.nextSibling.textContent : link.textContent).trim() : "#",
-        fecha:  fecha ? new Date(fecha.textContent) : new Date(),
-        fuente: fuente
-      };
-    }).filter(function(n) { return n.titulo.length > 5; });
-  } catch(e) { return []; }
+function renderFallback() {
+  var el = document.getElementById("live-feed");
+  if (!el) return;
+  var html = "";
+  ARTICULOS.slice(0, 5).forEach(function(a, i) {
+    html += "<li style='padding:.65rem .8rem;border-bottom:1px solid rgba(255,255,255,.08);cursor:pointer' onclick='abrirArticulo(" + i + ")'>";
+    html += "<div style='font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.2rem'>News LATAM · " + a.fecha + "</div>";
+    html += "<div style='font-size:.76rem;color:rgba(255,255,255,.82);line-height:1.4'>" + a.titulo + "</div></li>";
+  });
+  el.innerHTML = html;
+  var t = document.getElementById("live-time");
+  if (t) t.textContent = new Date().toLocaleTimeString("es-CR",{hour:"2-digit",minute:"2-digit"});
 }
 
-async function fetchLive(feed) {
-  var proxies = [
-    "https://api.allorigins.win/get?url=",
-    "https://corsproxy.io/?"
-  ];
-  for (var p = 0; p < proxies.length; p++) {
+async function cargarVivoRSS() {
+  var el = document.getElementById("live-feed");
+  if (!el) return;
+  var todas = [];
+
+  for (var i = 0; i < RSS_FEEDS.length; i++) {
     try {
-      var url = proxies[p] + encodeURIComponent(feed.url);
-      var res = await fetch(url, { signal: AbortSignal.timeout(9000) });
+      var apiUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(RSS_FEEDS[i].url) + "&count=6";
+      var controller = new AbortController();
+      var timer = setTimeout(function(){ controller.abort(); }, 7000);
+      var res = await fetch(apiUrl, { signal: controller.signal });
+      clearTimeout(timer);
       var data = await res.json();
-      var xml = data.contents || data;
-      if (typeof xml === "string" && xml.includes("<item>")) {
-        return parsearRSS(xml, feed.name);
+      if (data.status === "ok" && data.items) {
+        var nombre = RSS_FEEDS[i].name;
+        data.items.forEach(function(item) {
+          todas.push({
+            titulo: item.title.trim(),
+            link:   item.link,
+            fecha:  new Date(item.pubDate),
+            fuente: nombre
+          });
+        });
       }
     } catch(e) {}
   }
-  return [];
-}
 
-async function actualizarNoticias() {
-  var feedEl = document.getElementById("live-feed");
-  var timeEl = document.getElementById("live-time");
-  if (!feedEl) return;
-
-  feedEl.innerHTML = "<li style='padding:1rem;text-align:center;color:rgba(255,255,255,.35);font-size:.75rem'>Cargando noticias...</li>";
-
-  var todas = [];
-  for (var i = 0; i < LIVE_FEEDS.length; i++) {
-    var items = await fetchLive(LIVE_FEEDS[i]);
-    todas = todas.concat(items);
-  }
-
-  todas.sort(function(a, b) { return b.fecha - a.fecha; });
-  todas = todas.slice(0, 18);
+  todas.sort(function(a,b){ return b.fecha-a.fecha; });
 
   if (todas.length === 0) {
-    feedEl.innerHTML = "<li style='padding:1rem;text-align:center;color:rgba(255,255,255,.35);font-size:.75rem'>No se pudo conectar. Reintentando...</li>";
-    setTimeout(actualizarNoticias, 60000);
+    renderFallback();
     return;
   }
 
   var html = "";
-  todas.forEach(function(n) {
+  todas.slice(0,18).forEach(function(n) {
     var hora = "";
-    try { hora = n.fecha.toLocaleTimeString("es-CR", {hour:"2-digit", minute:"2-digit"}); } catch(e) {}
-    html += "<li style='padding:.65rem .8rem;border-bottom:1px solid rgba(255,255,255,.06);transition:background .15s' onmouseover='this.style.background="rgba(255,255,255,.04)"' onmouseout='this.style.background=""'>";
-    html += "<div style='font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.2rem'>" + n.fuente + (hora ? " · " + hora : "") + "</div>";
+    try { hora = n.fecha.toLocaleTimeString("es-CR",{hour:"2-digit",minute:"2-digit"}); } catch(e){}
+    html += "<li style='padding:.65rem .8rem;border-bottom:1px solid rgba(255,255,255,.08);transition:background .15s' onmouseover='this.style.background="rgba(255,255,255,.05)"' onmouseout='this.style.background=""'>";
+    html += "<div style='font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.2rem'>" + n.fuente + (hora?" · "+hora:"") + "</div>";
     html += "<a href='" + n.link + "' target='_blank' rel='noopener' style='text-decoration:none'>";
     html += "<div style='font-size:.76rem;color:rgba(255,255,255,.82);line-height:1.4'>" + n.titulo + "</div></a></li>";
   });
-  feedEl.innerHTML = html;
+  el.innerHTML = html;
 
-  if (timeEl) {
-    try { timeEl.textContent = new Date().toLocaleTimeString("es-CR", {hour:"2-digit", minute:"2-digit"}); } catch(e) {}
+  var t = document.getElementById("live-time");
+  if (t) {
+    try { t.textContent = new Date().toLocaleTimeString("es-CR",{hour:"2-digit",minute:"2-digit"}); } catch(e){}
   }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(actualizarNoticias, 2000);
-  setInterval(actualizarNoticias, 5 * 60 * 1000);
+  renderFallback(); // Mostrar artículos propios inmediatamente
+  setTimeout(cargarVivoRSS, 1000); // Luego intentar noticias externas
+  setInterval(cargarVivoRSS, 5 * 60 * 1000);
 });
 </script>
 </body>
