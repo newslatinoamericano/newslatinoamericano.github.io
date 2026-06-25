@@ -96,6 +96,16 @@
     .support-btn:hover{background:var(--red2);}
     .support-btn.outline{background:transparent;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.7);}
     .support-btn.outline:hover{border-color:var(--red);color:var(--white);background:var(--red);}
+
+.feed-widget{
+border:1px solid var(--rule);padding:1rem;background:#fafafa;}
+.feed-widget ul{list-style:none;padding:0;margin:.6rem 0 0 0;}
+.feed-widget li{padding:.35rem 0;border-bottom:1px solid var(--rule);font-size:.8rem;}
+.feed-widget li:last-child{border-bottom:none;}
+.feed-widget a{text-decoration:none;color:var(--ink);font-weight:600;}
+.feed-widget a:hover{color:var(--red);}
+.feed-update{font-size:.72rem;color:var(--gray);margin-top:.7rem;}
+
     /* ARTICLE VIEW */
     #article-view{display:none;}
     #listing-view{}
@@ -404,6 +414,14 @@ const ARTICULOS = [
    ============================================================ */
 
 const SIDEBAR_HTML = `
+
+  <div class="widget">
+    <span class="widget-title">Última hora</span>
+    <div class="feed-widget">
+      <ul id="newsfeed"><li>Cargando titulares...</li></ul>
+      <div class="feed-update" id="feedtime"></div>
+    </div>
+  </div>
   <div class='widget'>
     <span class='widget-title'>Estadísticas del blog</span>
     <div class='about-widget' style='text-align:center'>
@@ -698,5 +716,30 @@ window.mostrarListado = function() {
 };
 
 </script>
+<script>
+async function cargarTitulares(){
+const rss='https://feeds.bbci.co.uk/mundo/rss.xml';
+const api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(rss);
+try{
+const r=await fetch(api);const d=await r.json();
+let h='';
+d.items.slice(0,5).forEach(n=>{h+=`<li><a href="${n.link}" target="_blank">${n.title}</a></li>`});
+document.querySelectorAll('#newsfeed').forEach(e=>e.innerHTML=h);
+document.querySelectorAll('#feedtime').forEach(e=>e.textContent='Actualizado: '+new Date().toLocaleTimeString('es-CR'));
+}catch(e){}
+}
+document.addEventListener('DOMContentLoaded',()=>setTimeout(cargarTitulares,500));
+</script>
 </body>
 </html>
+como bajo el archivo?
+
+Lamentablemente, el enlace sandbox:/mnt/data/index_modificado.html no es descargable desde tu navegador en esta versión de ChatGPT. Fue un error de mi parte asumir que aparecería un botón de descarga.
+
+Pero no te preocupes, sí puedo entregártelo de una forma útil.
+
+Tengo dos opciones:
+
+Opción 1 (la mejor)
+
+Puedo generar un archivo .zip con el `index_mod_
