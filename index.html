@@ -135,6 +135,10 @@
 .share-box{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;}
 .share-box a{background:#C8102E;padding:8px 15px;color:white;text-decoration:none;font-size:14px;border-radius:4px;font-weight:700;}
 .share-box a:hover{background:#9B0A22;}
+.share-title{margin-top:25px;font-size:.85rem;font-weight:700;color:#555}
+.share-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.share-links a{background:#C8102E;color:#fff;padding:6px 12px;border-radius:4px;text-decoration:none;font-size:.8rem}
+
 
 @media(max-width:900px){
       .featured-grid,.three-col,.body-grid,.art-grid{grid-template-columns:1fr;}
@@ -469,6 +473,13 @@ function abrirArticulo(idx) {
   if (a.imagen) { im.src = a.imagen; im.alt = a.titulo; im.style.display = 'block'; }
   else { im.style.display = 'none'; }
   document.getElementById('av-cuerpo').innerHTML    = a.contenido;
+const u=window.location.origin+window.location.pathname;
+document.getElementById('av-cuerpo').innerHTML += `<div class='share-title'>Compartir este reportaje</div><div class='share-links'>
+<a target='_blank' href='https://twitter.com/intent/tweet?text=${encodeURIComponent(a.titulo)}&url=${encodeURIComponent(u)}'>X</a>
+<a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(u)}'>Facebook</a>
+<a target='_blank' href='https://api.whatsapp.com/send?text=${encodeURIComponent(a.titulo+" "+u)}'>WhatsApp</a>
+<a target='_blank' href='https://t.me/share/url?url=${encodeURIComponent(u)}&text=${encodeURIComponent(a.titulo)}'>Telegram</a>
+</div>`;
   document.getElementById('sidebar-article').innerHTML = SIDEBAR_HTML;
   document.getElementById('listing-view').style.display  = 'none';
   document.getElementById('article-view').style.display  = 'block';
@@ -518,27 +529,14 @@ function renderAll() {
           </div>
         </div>
         <div class="featured-secondary">
-${resto.slice(0,1).map((s)=>`
-<div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
-<p class="art-kicker">${s.categoria} · ${s.fecha}</p>
-${img(s.imagen,s.titulo,'side-img')}
-<h3>${s.titulo}</h3>
-<p>${s.resumen}</p>
-</div>`).join('')}
-
-<div class="side-art">
-<p class="art-kicker">Panorama Global IA</p>
-<div id="panorama-txt" style="font-size:.78rem;line-height:1.5"></div>
-</div>
-
-${resto.slice(1,2).map((s)=>`
-<div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
-<p class="art-kicker">${s.categoria} · ${s.fecha}</p>
-${img(s.imagen,s.titulo,'side-img')}
-<h3>${s.titulo}</h3>
-<p>${s.resumen}</p>
-</div>`).join('')}
-</div>
+          ${resto.slice(0,2).map((s,i) => `
+            <div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
+              <p class="art-kicker">${s.categoria} · ${s.fecha}</p>
+              ${img(s.imagen, s.titulo, 'side-img')}
+              <h3>${s.titulo}</h3>
+              <p>${s.resumen}</p>
+            </div>`).join('')}
+        </div>
       </div>`;
   }
 
