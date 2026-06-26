@@ -518,14 +518,27 @@ function renderAll() {
           </div>
         </div>
         <div class="featured-secondary">
-          ${resto.slice(0,2).map((s,i) => `
-            <div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
-              <p class="art-kicker">${s.categoria} · ${s.fecha}</p>
-              ${img(s.imagen, s.titulo, 'side-img')}
-              <h3>${s.titulo}</h3>
-              <p>${s.resumen}</p>
-            </div>`).join('')}
-        </div>
+${resto.slice(0,1).map((s)=>`
+<div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
+<p class="art-kicker">${s.categoria} · ${s.fecha}</p>
+${img(s.imagen,s.titulo,'side-img')}
+<h3>${s.titulo}</h3>
+<p>${s.resumen}</p>
+</div>`).join('')}
+
+<div class="side-art">
+<p class="art-kicker">Panorama Global IA</p>
+<div id="panorama-txt" style="font-size:.78rem;line-height:1.5"></div>
+</div>
+
+${resto.slice(1,2).map((s)=>`
+<div class="side-art" onclick="abrirArticulo(${ARTICULOS.indexOf(s)})">
+<p class="art-kicker">${s.categoria} · ${s.fecha}</p>
+${img(s.imagen,s.titulo,'side-img')}
+<h3>${s.titulo}</h3>
+<p>${s.resumen}</p>
+</div>`).join('')}
+</div>
       </div>`;
   }
 
