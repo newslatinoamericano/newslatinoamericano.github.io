@@ -174,7 +174,12 @@
   <span class="breaking-label">Último análisis</span>
   <span id="breaking-txt"></span>
 </div>
-<div class="breaking-bar" style="background:#111;"><span class="breaking-label">Panorama Global</span><span id="panorama-txt">Cargando titulares...</span></div>
+
+<section id="panorama-box" style="max-width:1280px;margin:0 auto;padding:15px;background:#fff;border-bottom:1px solid #ddd;">
+<h3 style="margin:0 0 10px;color:#C8102E;">📰 PANORAMA GLOBAL IA</h3>
+<div id="panorama-txt">Cargando titulares...</div>
+</section>
+
 
 <!-- LISTADO -->
 <div id="listing-view">
@@ -572,8 +577,7 @@ async function cargarPanorama(){
 try{
 const r=await fetch("panorama.json");
 const datos=await r.json();
-const titulares=datos.slice(0,3).map(n=>`${n.region}: ${n.texto}`).join(" • ");
-document.getElementById("panorama-txt").textContent=titulares;
+document.getElementById("panorama-txt").innerHTML=datos.slice(0,3).map(n=>`<p style='margin:8px 0'><b>🌎 ${n.region}</b><br>${n.texto}</p>`).join('');
 }catch(e){document.getElementById("panorama-txt").textContent="Panorama internacional no disponible.";}
 }
 
