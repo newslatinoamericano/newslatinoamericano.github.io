@@ -1,6 +1,22 @@
 [
-{
-"region":"Estados Unidos",
-"texto":"Esperando actualización..."
-}
+  {
+    "region": "BBC Mundo",
+    "texto": "“Son todo lo que tengo”: la búsqueda desesperada de sobrevivientes en Venezuela mientras la cifra de muertos asciende a 920"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"Hospitales completamente desbordados\": cómo el terremoto pone más presión al ya deteriorado sistema de salud de Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Imágenes satelitales del antes y el después muestran la devastación causada por el doble terremoto en Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Análisis BBC: los terremotos son un golpe devastador para una Venezuela en crisis desde hace años"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "¿Por qué es imposible predecir el momento preciso de un terremoto?"
+  }
 ]
