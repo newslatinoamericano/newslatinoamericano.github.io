@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "El campo de golf en La Guaira que era un símbolo de opulencia y ahora es el epicentro del desastre"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Hay edificios donde no se ha removido ni una sola piedra\": crece la frustración en Venezuela mientras se desvanece la esperanza de hallar más sobrevivientes"
   },
   {
     "region": "BBC Mundo",
-    "texto": "El campo de golf en La Guaira que era un símbolo de opulencia y ahora es el epicentro del desastre"
+    "texto": "Rescatan a dos niños atrapados durante días entre los escombros con la ayuda de equipos de Colombia y México"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Qué es lo último sobre los terremotos en Venezuela que han dejado al menos 1.400 muertos y más de 3.200 heridos"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La conmovedora historia del bebé de 18 días y su madre que fueron rescatados de entre los escombros tras el terremoto doble en Venezuela"
+    "texto": "Qué es lo último sobre los terremotos en Venezuela que han dejado al menos 1.450 muertos y más de 3.150 heridos"
   }
 ]
