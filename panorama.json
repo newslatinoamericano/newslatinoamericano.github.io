@@ -1,15 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "La madre rescatada de entre los escombros en Venezuela junto a su bebé le cuenta a la BBC cómo el recién nacido la ayudó a sobrevivir"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Más de 1.700 muertos en Venezuela mientras las familias excavan entre los escombros para encontrar sobrevivientes 5 días después de los terremotos"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"¡Que nadie se mueva!\": los tensos 10 minutos de silencio en los que todo se detiene para tratar de oír voces bajo los escombros"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Las familias excavan entre los escombros para encontrar sobrevivientes 5 días después de los dos terremotos en Venezuela"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"El bebé fue mi motor para estar despierta y alerta\": la BBC habla con la madre rescatada junto a su hijo de 18 días en Venezuela"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Aarón, el joven de 21 años rescatado tras pasar 106 horas bajo los escombros por el doble terremoto de Venezuela"
+    "texto": "Por qué millones de teléfonos Android recibieron una alerta sobre el doble terremoto en Venezuela antes de que se sintiera"
   }
 ]
