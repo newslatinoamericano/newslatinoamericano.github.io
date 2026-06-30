@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Asciende a 1.943 el número de muertos tras los terremotos en Venezuela mientras continúa la búsqueda de sobrevivientes"
+    "texto": "El milagroso rescate de un niño de 3 años seis días después de los terremotos en Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Asciende a 1.943 el número de muertos tras los terremotos en Venezuela mientras disminuye la esperanza de hallar sobrevivientes"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Perros, drones y detectores de sonido: cómo encuentran sobrevivientes los rescatistas en Venezuela"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"¡Que nadie se mueva!\": los tensos 10 minutos de silencio en los que todo se detiene para tratar de oír voces bajo los escombros"
+    "texto": "Lucas Trejo, el futbolista argentino que perdió a su esposa y sus dos hijos en los terremotos en Venezuela"
   }
 ]
