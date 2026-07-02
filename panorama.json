@@ -1,7 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Terremoto en Venezuela: 3 factores que explican por qué se derrumbaron tantos edificios en La Guaira"
+    "texto": "3 factores que explican por qué se derrumbaron tantos edificios en La Guaira por el terremoto en Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"¡Un milagro!\": el extraordinario rescate de Hernán, el hombre que estuvo 8 días bajo los escombros después de los terremotos de Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "El vuelo de la tragedia: los 146 deportados por EE.UU. el mismo día de los terremotos que acabaron bajo los escombros en Venezuela"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "La destrucción que han sufrido otras localidades de Venezuela golpeadas por los terremotos y opacadas por la magnitud de la tragedia en La Guaira"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Quiénes son los lefebvrianos, el grupo ultraconservador que desafió al papa León XIV ordenando a 4 obispos y que hace temer un cisma en la Iglesia católica"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Cómo es Residencia, el fascinante hotel para científicos en uno de los lugares más extremos del mundo"
+    "texto": "Quiénes son los lefebvrianos, el grupo ultraconservador excomulgado por el Vaticano luego de desafiar al papa León XIV ordenando a 4 obispos"
   }
 ]
