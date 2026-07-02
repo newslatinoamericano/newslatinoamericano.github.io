@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "El vuelo de la tragedia: los 146 deportados por EE.UU. el mismo día de los terremotos que acabaron bajo los escombros en Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "3 factores que explican por qué se derrumbaron tantos edificios en La Guaira por el terremoto en Venezuela"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "El vuelo de la tragedia: los 146 deportados por EE.UU. el mismo día de los terremotos que acabaron bajo los escombros en Venezuela"
+    "texto": "El Vaticano excomulga a los obispos rebeldes del grupo de los lefebvrianos y advierte de la misma pena a sus miles de seguidores"
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Estoy vivo, veo el cielo. Llamen a mi familia\": las impactantes historias de cómo sobrevivieron algunos venezolanos la primera semana después del doble terremoto"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Quiénes son los lefebvrianos, el grupo ultraconservador excomulgado por el Vaticano luego de desafiar al papa León XIV ordenando a 4 obispos"
+    "texto": "\"Gasté US$6.000 en un viaje para ver el Mundial y me dejaron tirado en la puerta del estadio\""
   }
 ]
