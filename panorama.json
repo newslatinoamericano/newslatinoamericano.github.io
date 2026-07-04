@@ -1,15 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Cómo el expansionismo en territorio y población de EE.UU. a lo largo de 250 años convirtió al país en una superpotencia pero con profundas divisiones"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Me da miedo lo que voy a ver allá dentro\": BBC Mundo visita la morgue improvisada de Los Silos, donde los cadáveres se acumulan al aire libre tras los terremotos en Venezuela"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Por qué EE.UU. se llama Estados Unidos de América y quién le dio el nombre"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "El adiós a Cabo Verde, el pequeño país liderado por Vozinha que el Mundial jamás olvidará"
+    "texto": "El adiós a Cabo Verde, el humilde equipo liderado por Vozinha que el Mundial jamás olvidará"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Estoy en terapia para superar la adicción que me hace pasar 14 horas al día con el celular"
+    "texto": "Quiénes fueron las \"madres fundadoras\", clave en la formación de Estados Unidos hace 250 años"
   }
 ]
