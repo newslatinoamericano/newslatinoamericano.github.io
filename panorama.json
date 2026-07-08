@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Lo que una investigación de la BBC revela sobre la red de \"cárceles de tortura\" de Rusia en Ucrania"
+    "texto": "Cuánto costará la reconstrucción tras los terremotos en Venezuela y con qué recursos cuenta el país para afrontarla"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Los adolescentes que ensayaban su baile de fin de curso cuando ocurrieron los terremotos de Venezuela y a los que sus padres aún buscan entre los escombros casi \"sin ayuda\""
+    "texto": "\"Agarré mis ollas y me vine a ayudar\": el cocinero venezolano que viajó a Caracas para ofrecer comidas a las víctimas de los terremotos de La Guaira"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Trump da por terminada la tregua con Irán en medio de fuertes ataques mutuos"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Qué le faltó a Colombia para avanzar a cuartos de final tras ilusionar con buen juego en el Mundial 2026"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Mi abuela me ayudó a traducir mi primer cover al quechua y ahora canto en ese idioma por el mundo\""
+    "texto": "Cómo es vivir en las 5 ciudades con mayor calidad de vida en 2026"
   }
 ]
