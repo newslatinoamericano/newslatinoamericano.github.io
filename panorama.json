@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "¡Francia imparable! Gana 2-0 frente a Marruecos y clasifica a semifinales por tercer Mundial consecutivo"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Qué papel está teniendo EE.UU. en Venezuela tras los devastadores terremotos que dejaron miles de muertos y damnificados"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Encontré un cementerio con los restos de 40.000 personas esclavizadas bajo mi casa durante una reforma\""
+    "texto": "\"En la reforma de mi casa encontré un cementerio con los restos de 40.000 personas esclavizadas\""
   },
   {
     "region": "BBC Mundo",
     "texto": "Muere a los 75 años Bonnie Tyler, la voz que cautivó al mundo con el éxito \"Total Eclipse of the Heart\" en los 80"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "¿Está siendo este el mejor Mundial de la historia?"
   }
 ]
