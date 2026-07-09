@@ -1,7 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Cuántos miles de millones dólares costará la reconstrucción en Venezuela tras los terremotos y con qué recursos cuenta el país para afrontarla"
+    "texto": "La escasez de combustible en Rusia está causando estragos, pero ¿presionará a Putin para cambiar de estrategia en la guerra de Ucrania?"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Trump da por terminada la tregua con Irán mientras Teherán advierte de una respuesta \"valiente\" a los ataques de EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cuántos miles de millones de dólares costará la reconstrucción en Venezuela tras los terremotos y con qué recursos cuenta el país para afrontarla"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Trump da por terminada la tregua con Irán en medio de fuertes ataques mutuos"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Cómo llegan y qué posibilidades tienen Argentina, España y los otros 6 equipos que alcanzaron los cuartos de final del Mundial"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Cómo es vivir en las 5 ciudades con mayor calidad de vida en 2026"
+    "texto": "Arrancan los cuartos de final del Mundial: cómo llegan y qué posibilidades tienen Argentina, España y los otros 6 equipos que juegan"
   }
 ]
