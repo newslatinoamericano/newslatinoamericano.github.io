@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "¡España a semifinales! Gana 2-1 a Bélgica y se enfrentará a Francia por un lugar en la final del Mundial 2026"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Ya no quiero ser pediatra. La mirada de esos niños se queda con uno para siempre\": el dolor de los médicos que asisten a los heridos del terremoto en Venezuela"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "La \"transformación milagrosa\" de Corea del Norte: cómo logró Kim Jong-un paliar la situación económica de su país y afianzar su poder"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "3 pistas que dan los nombramientos de De la Espriella sobre cómo será su gobierno en Colombia"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "\"Llevamos el almuerzo al trabajo durante 10 años y pudimos jubilarnos a los 35 y 40 años\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cuál es el origen del \"tacofredag\", la tradición noruega de comer tacos los viernes"
   }
 ]
