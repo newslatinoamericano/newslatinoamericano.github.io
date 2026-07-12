@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Argentina gana a una Suiza con 10 y peleará con Inglaterra por un puesto en la final del Mundial"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cómo pasó Escocia de ser la capital de los asesinatos en Europa a uno de los lugares más seguros del mundo"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué el declive de población deja al descubierto las antiguas divisiones de Alemania"
   },
   {
@@ -10,13 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Cuerpo de teléfono\": cómo la tecnología nos arruga el cuello y debilita las manos"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Llevamos el almuerzo al trabajo durante 10 años y pudimos jubilarnos a los 35 y 40 años\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Muere a los 25 años Jayden Adams, futbolista sudafricano que disputó el Mundial 2026"
   }
 ]
