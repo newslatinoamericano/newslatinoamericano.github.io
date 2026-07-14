@@ -1,22 +1,22 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Tenemos muchos niños fallecidos. Estamos muertos por dentro\": la tragedia que dejan los terremotos en la escuela de béisbol Criollitos de Venezuela"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "El inicio de una nueva era en Gibraltar con la eliminación de los controles fronterizos entre España y Reino Unido"
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Eran de cartón\": el colapso de más de 100 viviendas sociales turcas en el terremoto de Venezuela que pone bajo escrutinio el programa estrella de Chávez"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Trump restablece el bloqueo a los puertos iraníes e impone un recargo del 20% a la carga que transita por el estrecho de Ormuz"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Las personas que se mudan de Occidente a Rusia en busca de valores tradicionales (y la realidad que encuentran)"
+    "texto": "Matan a tiros a ciudadano colombiano durante una operación de ICE en Maine"
   },
   {
     "region": "BBC Mundo",
     "texto": "Muere por eutanasia Catalina Giraldo, la mujer de 30 años que emprendió una  batalla legal en Colombia para acceder al suicidio médicamente asistido"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Por qué la infertilidad masculina sigue sin recibir la atención necesaria: \"Se presupone que el problema es de la mujer\""
   }
 ]
