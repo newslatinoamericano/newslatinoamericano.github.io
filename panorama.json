@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "La marcha atrás de Trump respecto al pago de peajes en Ormuz revela sus dificultades para poner fin a la guerra con Irán"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cómo Erdogan ha transformado Turquía en los 10 años desde el último intento de golpe de Estado en el país"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "¡España finalista! 16 años después regresa a la final de la Copa del Mundo tras aplastar 2-0 a Francia"
   },
   {
@@ -10,13 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Tenemos muchos niños fallecidos. Estamos muertos por dentro\": la tragedia que dejan los terremotos en la escuela de béisbol Criollitos de Venezuela"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "El inicio de una nueva era en Gibraltar con la eliminación de los controles fronterizos entre España y Reino Unido"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Mi madre me enfermó intencionalmente durante años hasta que un médico la desenmascaró"
   }
 ]
