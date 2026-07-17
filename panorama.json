@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Vuelo 901: las incógnitas que rodean el caso del avión derribado por un atacante suicida en Panamá un día después del atentado a la AMIA en Argentina"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué miles de personas salieron a protestar en Ucrania tras la destitución del ministro de Defensa"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Crecer en un mundo de gigantes\": las personas que viven con síndrome de Laron en Ecuador (y por qué pueden ser clave para combatir la diabetes y el cáncer)"
+    "texto": "Alejandra Jáidar, la primera física mexicana y su rol clave para que México albergara uno de los aceleradores de partículas en operación \"más antiguos del mundo\""
   },
   {
     "region": "BBC Mundo",
-    "texto": "El padre que encontró el cuerpo de su hija entre los escombros 20 días después de los terremotos en Venezuela"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "9 cosas que debes saber para entender \"La Odisea\""
+    "texto": "\"Es como cerrar un círculo perfecto\": la historia detrás de la famosa foto de Messi bañando a Lamine Yamal contada por el fotógrafo que la tomó"
   }
 ]
