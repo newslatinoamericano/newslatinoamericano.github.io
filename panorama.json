@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "EE.UU. advierte a Daniel Ortega que no se quedará \"de brazos cruzados\" ante el anuncio de que no volverá a haber elecciones en Nicaragua"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "De Cuba a Vietnam: los miles de extranjeros que han muerto combatiendo para Rusia en la guerra con Ucrania"
   },
   {
     "region": "BBC Mundo",
-    "texto": "VIDEO | \"Aquí no volverá a haber elecciones\": Daniel Ortega dice que eliminará los comicios en Nicaragua para evitar una victoria de la oposición"
+    "texto": "La crisis que genera en Ucrania el relevo en el Ministerio de Defensa en plena guerra con Rusia"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "La historia de migración y éxito de las familias de Lamine Yamal y Nico Williams, dos de las jóvenes estrellas de la España campeona del mundo"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La FIFA abre una investigación contra Argentina por los incidentes tras la derrota en la final del Mundial 2026"
   }
 ]
