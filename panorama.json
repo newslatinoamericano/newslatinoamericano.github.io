@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "¿Por qué Irán está arriesgando tanto por el estrecho de Ormuz?"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "EE.UU. advierte a Daniel Ortega que no se quedará \"de brazos cruzados\" ante el anuncio de que no volverá a haber elecciones en Nicaragua"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "El debate que genera \"La Odisea\" de Nolan entre los historiadores y los amantes del cine cuando se compara con la obra original"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La historia de migración y éxito de las familias de Lamine Yamal y Nico Williams, dos de las jóvenes estrellas de la España campeona del mundo"
   }
 ]
