@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "¿Por qué hay tantas casas sin terminar en Perú?"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "3 investigaciones internacionales sobre Nicolás Maduro y su gobierno además del proceso judicial de Nueva York"
   },
   {
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Hallan los restos del avión de Pan Am cuyo accidente hace más de 70 años marcó un antes y un después en la seguridad aérea"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "OpenAI dice que su inteligencia artificial se rebeló y lanzó un ciberataque \"sin precedentes\""
+    "texto": "\"Es una señal de alarma\": la advertencia de la empresa hackeada por los modelos rebeldes de OpenAI"
   }
 ]
