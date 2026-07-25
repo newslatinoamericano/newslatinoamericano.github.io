@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Es el peor incendio de la historia de Madrid\": los fuegos sin control que han obligado a evacuar a decenas de miles de personas en el centro de España"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Qué es la montaña Pickaxe, la instalación secreta y fuertemente protegida de Irán que Trump ha prometido atacar \"con dureza\""
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Es el peor incendio de la historia de Madrid\": los fuegos sin control que han obligado a evacuar a decenas de miles de personas en el centro de España"
+    "texto": "Me estrellé en el cráter de un volcán en erupción y sobreviví una noche con las burbujas de lava bajo los pies"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Descubrí que mi mejor amigo y compañero de trabajo era en realidad mi hermano\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"El divorcio del siglo\": el magnate de la tecnología que deberá pagar US$644 millones a su exesposa"
   }
 ]
