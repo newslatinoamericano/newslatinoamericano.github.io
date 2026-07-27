@@ -5,10 +5,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Detienen en Chile a un coronel retirado condenado por el asesinato del cantautor Víctor Jara tras permanecer prófugo durante años"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "\"Todo el mundo se queda en la playa mirando los misiles en el cielo\": el contraste de Odesa, el balneario de Ucrania con turismo de lujo y bombardeos diarios"
   },
   {
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "Las monjas inversoras que presionan a gigantes tecnológicos y bancarios para \"proteger la creación de Dios\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cruzamos el Atlántico en dos coches flotantes para cumplir el sueño de mi padre moribundo"
   }
 ]
