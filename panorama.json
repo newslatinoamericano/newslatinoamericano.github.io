@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Las mujeres víctimas de violencia doméstica que mataron a sus parejas: \"Dijo que nos iba a matar a mí y a mi hijo y después se iba a suicidar\""
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Siento que jamás podré arrancarme ese olor a muerte\": el impacto de los terremotos de Venezuela en una rescatista que trabajó 18 días en La Guaira"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "¿Cómo un incendio puede provocar una tormenta con rayos? El peligroso fenómeno del \"dragón de las nubes\" que generó el fuego en Francia"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "Las monjas inversoras que presionan a gigantes tecnológicos y bancarios para \"proteger la creación de Dios\""
   },
   {
     "region": "BBC Mundo",
-    "texto": "Cruzamos el Atlántico en dos autos flotantes para cumplir el sueño de mi padre moribundo"
+    "texto": "Cruzamos el Atlántico en dos autos flotantes para cumplir el sueño de mi padre"
   }
 ]
