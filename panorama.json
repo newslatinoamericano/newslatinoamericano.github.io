@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "El dilema de Arabia Saudita al intentar mantenerse al margen de la guerra entre EE.UU. e Irán"
+    "texto": "Por qué el gobierno de Trump acusa ahora a Cuba de liderar una campaña para desestabilizar a EE.UU. desde adentro"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cómo los carteles mexicanos de la droga han expandido los laboratorios de metanfetamina en África"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "El polémico caso de Bernarda Vera, la chilena declarada desaparecida durante el régimen de Pinochet que hallaron viva en Argentina 5 décadas después"
+    "texto": "Qué significa para los precios de los vuelos que las aerolíneas de bajo costo estén en crisis"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Por qué las aerolíneas de bajo costo están en crisis y qué significa esto para los precios de los vuelos"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Tetracromatismo: la particular variante genética que hace que algunas mujeres vean más colores que el resto de personas"
+    "texto": "Por qué algunas personas ven más colores que el resto (y cómo saber si eres una de ellas)"
   }
 ]
