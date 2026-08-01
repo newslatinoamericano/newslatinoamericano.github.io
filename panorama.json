@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "3 asuntos que históricamente han tensado las relaciones entre España y Marruecos"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "4 claves para entender la grave crisis migratoria en Ceuta, uno de los enclaves españoles en el norte de África"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Estamos atrapadas aquí, sin poder volver a casa\": la desesperación de los miles de migrantes que cruzaron la frontera entre Marruecos y España por Ceuta"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "México detiene a R1: quién es el sospechoso de idear el asesinato del alcalde Carlos Manzo y la modelo Valeria Márquez"
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Tuve cáncer en estadio cuatro a los 14 años y ahora soy médico\""
+    "texto": "Infantino da marcha atrás y retira el plan de la FIFA para abrir los Mundiales a la inversión privada"
   }
 ]
