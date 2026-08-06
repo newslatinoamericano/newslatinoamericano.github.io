@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Atrapados en la guerra: los soldados heridos que Rusia vuelve a enviar al frente de batalla con Ucrania"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Asesinato de César Gastélum: cómo los influencers en México se convirtieron en objetivo del narco"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Quien es Abdul El-Sayed, el candidato musulmán de izquierda que ganó las primarias de Michigan y hace temblar al Partido Demócrata"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Los curiosos métodos que usaba la gente para despertarse antes de que existieran las alarmas (y el celular)"
   }
 ]
