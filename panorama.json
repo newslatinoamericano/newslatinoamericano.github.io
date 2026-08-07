@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Cuál es el origen de la histórica alianza entre EE.UU. y Marruecos, y qué papel juega en la crisis migratoria en el enclave español de Ceuta"
+    "texto": "\"Dijeron que me quedaría y no\", dice Petro tras dejar la casa presidencial, mientras De la Espriella se prepara para la toma de posesión en Colombia"
   },
   {
     "region": "BBC Mundo",
     "texto": "Cuáles son las propuestas más polémicas de la \"patria milagro\" de De la Espriella y qué contrapesos tendrá como presidente de Colombia"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cuál es el origen de la histórica alianza entre EE.UU. y Marruecos, y qué papel juega en la crisis migratoria en el enclave español de Ceuta"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Un alumno de 14 años mata a tiros a 5 profesores y a sus abuelos en Tailandia"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Mi app de fitness sabía que estaba embarazada antes que yo\""
   }
 ]
