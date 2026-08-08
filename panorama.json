@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Cómo los hermanos Batista levantaron el mayor imperio cárnico del mundo, cayeron en desgracia y volvieron a la cima"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "3 momentos que marcaron la posesión de Abelardo de la Espriella como presidente de Colombia (y qué dicen sobre cómo será su gobierno)"
   },
   {
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Fenya, la jerga clandestina de las prisiones soviéticas que ahora usan ciberdelincuentes y políticos como Putin"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Huesos de mamut, buques nazis y bombas sin explotar: los vestigios del pasado que sacó a la luz la histórica sequía en Europa"
+    "texto": "10 de las casas diseñadas con mayor ingenio y simplicidad en Japón"
   }
 ]
