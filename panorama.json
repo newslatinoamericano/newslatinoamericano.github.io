@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Cómo los hermanos Batista levantaron el mayor imperio cárnico del mundo, cayeron en desgracia y volvieron a la cima"
+    "texto": "Cómo Italia, un país famoso por la saludable dieta mediterránea, acabó teniendo tantos niños obesos"
   },
   {
     "region": "BBC Mundo",
     "texto": "Muere a los 68 años Jorge Messi, padre y figura clave en la carrera de Lionel Messi; luchaba desde hacía tiempo contra una enfermedad"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cómo los hermanos Batista levantaron el mayor imperio cárnico del mundo, cayeron en desgracia y volvieron a la cima"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "10 de las casas diseñadas con mayor ingenio y simplicidad en Japón"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Consuelo Velázquez, la compositora mexicana que creó el éxito mundial \"Bésame mucho\" (e intentó mantenerse anónima)"
   }
 ]
