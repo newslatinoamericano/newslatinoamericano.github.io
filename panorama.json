@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Mira las mejores imágenes del eclipse solar total que se vivió en España"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Cuando estábamos perdiendo las esperanzas, recibimos una llamada\": el rescate de Daniela Largo, la joven atrapada por 36 horas en Pereira tras el terremoto"
   },
   {
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Mira en vivo el eclipse solar total en España, un fenómeno único en más de un siglo"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Una auténtica rareza astronómica\": la inusual trilogía de eclipses que se verá desde España"
+    "texto": "Crítica de la BBC: \"El Spiderman de Tom Holland tiene que evolucionar o el actor debe dejar el papel\""
   }
 ]
