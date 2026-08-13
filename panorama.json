@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Una vez me regaló un muñeco vestido de él mismo\": Alina Fernández, la hija rebelde de Fidel Castro, el hombre al que nunca quiso llamar papá"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Al sentir el terremoto volví a la escuela por mi hija y una niña de 10 años acabó muriendo en mis brazos\""
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Las familias palestinas que llevan 4 días asediadas por colonos israelíes en Cisjordania"
+    "texto": "5 formas en las que los insectos toman decisiones y resuelven problemas (y qué podemos aprender de ellos)"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Así fue el espectacular eclipse solar total que se pudo ver en parte de Europa"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Crítica de la BBC: \"El Spiderman de Tom Holland tiene que evolucionar o el actor debe dejar el papel\""
+    "texto": "Las impresionantes imágenes del eclipse solar total que se pudo ver en Europa"
   }
 ]
