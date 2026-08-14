@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Somos demasiado pobres\": cómo el terremoto agrava la desesperada situación en el Chocó, una de las regiones más olvidadas de Colombia"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Los terremotos nos persiguen\": los hermanos adolescentes que perdieron a su madre en el sismo de Venezuela y ahora sufrieron el de Colombia"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Putin ya no puede cantar victoria en Ucrania\""
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "\"Mientras mi padre no diga dónde está el cuerpo de mi madre, no debería ser puesto en libertad\""
   },
   {
     "region": "BBC Mundo",
-    "texto": "La maestra de preescolar que lo dejó todo y se convirtió en guardiana de 200 pingüinos rey en el sur de Chile"
+    "texto": "Los obreros que descubrieron un tesoro de US$10 millones en  lingotes y monedas de oro sepultado en las paredes de una casa en Bélgica"
   }
 ]
