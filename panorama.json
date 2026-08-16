@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Por qué no se han podido encontrar los restos de García Lorca 90 años después de su ejecución en la Guerra Civil española"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "¿Cuánto más puede aguantar Irán la guerra con Estados Unidos?"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Nunca pensamos en no lanzarla\": el relato de un científico que ayudó a fabricar la bomba atómica que arrasó Nagasaki"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La ola de protestas que logró frenar la primera granja comercial de pulpos del mundo en España"
   }
 ]
