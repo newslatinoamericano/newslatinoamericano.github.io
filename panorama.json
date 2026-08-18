@@ -5,10 +5,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Te pude haber rescatado, hija\": la culpa del sobreviviente y la dificultad de ayudar a las víctimas de los terremotos"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "El pacto de La Meca: 4 claves para entender la \"OTAN musulmana\" creada por Turquía, Arabia Saudita y Pakistán"
   },
   {
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "\"El Chocó ha estado abandonado\": Shakira se compromete a reconstruir escuelas tras viajar a una de las zonas más pobres de Colombia después del terremoto"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"Perdí una pierna cuando tenía 16 años y ahora soy 4 veces campeón mundial de surf\""
   }
 ]
