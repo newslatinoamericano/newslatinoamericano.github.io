@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "\"La generación sobria\": por qué cada vez más jóvenes reemplazan el alcohol por medicamentos para la ansiedad"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "La niña de 10 años traficada de Perú a Ecuador para casarse con un hombre de 50 (y qué revela sobre el matrimonio infantil en América Latina)"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Qué se sabe del controvertido hallazgo de petróleo cerca del río Amazonas (y por qué Lula lo considera clave para acabar con los combustibles fósiles)"
+    "texto": "\"La generación sobria\": por qué cada vez más jóvenes reemplazan el alcohol por medicamentos para la ansiedad"
   },
   {
     "region": "BBC Mundo",
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Que encuentres la paz eterna\": el emotivo tributo a la fallecida actriz Hayden Panettiere del padre de su hija"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Qué se sabe del controvertido hallazgo de petróleo cerca del río Amazonas (y por qué Lula lo considera clave para acabar con los combustibles fósiles)"
   }
 ]
