@@ -5,6 +5,10 @@
   },
   {
     "region": "BBC Mundo",
+    "texto": "Ucrania busca sobrevivientes tras un doble ataque ruso contra un centro comercial que dejó 16 muertos"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué el estado de la economía de EE.UU. está disparando las alarmas en todo el mundo"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "La FIFA sanciona con 10 partidos al argentino Leandro Paredes por el altercado tras la final del Mundial con España"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Numbats, los adorables animales que dan esperanza al país que es el epicentro mundial de la extinción de mamíferos"
   }
 ]
