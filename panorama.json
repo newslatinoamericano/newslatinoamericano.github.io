@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Especial BBC: los niños invisibles nacidos de crímenes de guerra"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Qué descubrí cuando viajé de España a Nigeria para enfrentar al estafador que sedujo a mi madre"
   },
   {
     "region": "BBC Mundo",
-    "texto": "La red de tráfico de cocaína que dirigían los alumnos de una de las universidades más conocidas de EE.UU. (y cómo los atraparon)"
+    "texto": "Una jueza anula la prohibición de visados de EE.UU. a ciudadanos de 75 países, entre ellos Colombia, Uruguay y Cuba"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "¿Qué pasó con el sueño americano de Harry y Meghan?"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Por qué estrellas infantiles como Hayden Panettiere caen en las drogas"
   }
 ]
