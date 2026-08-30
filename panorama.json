@@ -5,6 +5,10 @@
   },
   {
     "region": "BBC Mundo",
+    "texto": "Por qué Islandia está tan dividida ante la posibilidad de adherirse a la Unión Europea"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Donald Trump y Delcy Rodríguez anuncian un acuerdo que otorga a EE.UU. el control de más del 20% de las reservas de petróleo de Venezuela"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Por qué las imágenes de las inundaciones en Tíbet no se están mostrando en China y sabemos poco sobre las víctimas allí"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Qué sentí el día que conocí a Ratko Mladić, el fanático militar que luego se convirtió en el \"carnicero de Bosnia\""
   }
 ]
