@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Por qué han disminuido tan drásticamente las muertes por sobredosis de fentanilo en EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cómo fueron los últimos minutos antes de que las inundaciones arrasaran la frontera entre Nepal y China"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Cambiará el mundo\": la revolución de las máquinas que se gesta en China y va mucho más allá de los robots humanoides"
   },
   {
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Declaran a Duane Davis culpable del asesinato del rapero Tupac Shakur hace 30 años"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"América Latina es una región impredecible, tanto para lo trágico como para lo maravilloso. Todos los días me sorprende\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "8 de los edificios más coloridos del mundo"
+    "texto": "\"Fue como pelear contra un dinosaurio\": la historia de la mujer que sobrevivió al ataque de un tiburón blanco dándole golpes"
   }
 ]
