@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "La BBC viaja al interior del Líbano ocupado por Israel, donde los ataques y demoliciones siguen a pesar del alto al fuego"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Quién es Alejandro Betancourt, el polémico \"bolichico\" multimillonario detrás del acuerdo petrolero entre EE.UU. y Venezuela"
   },
   {
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"La inclusión y el empoderamiento son un discurso fracasado y adormecedor\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Compartimos casa con una familia de osos que se baña varios días a la semana en nuestra piscina"
+    "texto": "Países Bajos traslada miles de millones en oro a Londres como medida de \"preparación para la crisis\""
   }
 ]
