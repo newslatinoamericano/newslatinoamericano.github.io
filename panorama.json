@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Documental BBC: cómo ha cambiado la vida en El Salvador en los 4 años de guerra de Bukele contra las maras"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"Colombia tiene una paranoia tras perder Panamá en 1903 que la ha llevado al aislacionismo en el Caribe, donde podría ser un motor\""
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
+    "texto": "\"Nunca se había privado a tantos niños del acceso a tantas historias\": el crecimiento imparable de la prohibición de libros en escuelas públicas de EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "El increíble rescate de dos trabajadores tras 9 días atrapados en un túnel por la avalancha en la frontera entre Nepal y Tíbet"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Hay amor desde el reproche y el ajuste de cuentas\": cómo trato de entender el suicidio de mi padre"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "¿Panqueques de almendras, arándanos o alquitrán?: tarvu, el extraño ingrediente que los finlandeses no pueden dejar de comer"
   }
 ]
