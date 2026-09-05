@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Totalitarismo total\": cómo la IA impulsa la mayor concentración de poder de la historia (y cuál fue la predicción de Putin que se está haciendo realidad)"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Documental BBC: cómo ha cambiado la vida en El Salvador en los 4 años de guerra de Bukele contra las maras"
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Colombia tiene una paranoia tras perder Panamá en 1903 que la ha llevado al aislacionismo en el Caribe, donde podría ser un motor\""
+    "texto": "¿Cómo podría terminar la guerra de EE.UU. contra Irán? 3 expertos dan su opinión"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "¿Qué pasará ahora que un juez declaró nulo el juicio contra Lindsay Clancy, la madre acusada de matar a sus tres hijos en EE.UU.?"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Nunca se había privado a tantos niños del acceso a tantas historias\": el crecimiento imparable de la prohibición de libros en escuelas públicas de EE.UU."
   }
 ]
