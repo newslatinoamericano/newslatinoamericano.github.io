@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Al menos 5 muertos luego de que un avión de carga se saliera de la pista al aterrizar en el aeropuerto de Miami"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "¿Por qué los países europeos están trasladando su oro fuera de América del Norte?"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Encuestas de boca de urna dan una victoria \"histórica\" al partido de ultraderecha alemán AfD"
+    "texto": "Pattaya, \"la ciudad del pecado\" de Tailandia que los soldados de EE.UU. llevan visitando desde la guerra de Vietnam"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "El matemático que llevaba 7 años trabajando en descifrar un enigma que fue resuelto por un aficionado"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Los aciertos y errores de 3 mapas que usamos hoy (y por qué el aprobado ahora por la ONU tampoco representa correctamente al mundo)"
+    "texto": "\"Las influencers que fingen sumisión a sus maridos manejan imperios multimillonarios\", la autora de la novela que analiza a las \"tradwives\" o esposas tradicionales"
   }
 ]
