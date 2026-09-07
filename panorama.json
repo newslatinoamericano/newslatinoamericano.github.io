@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "\"Lo que ocurrió en Venezuela no lo he visto ni en Haití ni en Pakistán\": la experta en desastres que alerta sobre los desafíos de la reconstrucción tras los terremotos"
+    "texto": "El dilema que enfrenta Europa tras la primera victoria de la extrema derecha en Alemania desde la Segunda Guerra Mundial"
   },
   {
     "region": "BBC Mundo",
     "texto": "\"Vivimos en una política de la crueldad que busca normalizar cosas que antes no podíamos tragar\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"Lo que ocurrió en Venezuela no lo he visto ni en Haití ni en Pakistán\": la experta en desastres que alerta sobre los desafíos de la reconstrucción tras los terremotos"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Qué es Sea Lion, el proyecto petrolero señalado por Milei que reaviva la tensión entre Argentina y Reino Unido sobre las Malvinas/Falklands"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Cómo el cerebro de las moscas puede ofrecer pistas sobre el comportamiento de los seres humanos"
   }
 ]
