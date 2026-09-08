@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Los vínculos con Arabia Saudita del hombre en el centro de una multimillonaria demanda por los ataques del 11-S"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "5 gráficos que muestran el drástico aumento de las detenciones de migrantes en EE.UU. y su país de origen"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "La red de propaganda prorrusa que explota la violencia sexual y utiliza a mujeres del ejército ucraniano como cebo"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Qué es Sea Lion, el proyecto petrolero señalado por Milei que reaviva la tensión entre Argentina y Reino Unido sobre las Malvinas/Falklands"
   }
 ]
