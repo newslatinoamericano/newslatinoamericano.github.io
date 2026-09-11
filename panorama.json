@@ -1,11 +1,7 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Especial interactivo | 11-S: los 149 minutos de caos y terror que cambiaron el mundo"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Nunca olvidaremos\": EE.UU. conmemora los 25 años de los ataques del 11 de septiembre"
+    "texto": "Especial BBC Mundo | 11-S: los 149 minutos de caos y terror que cambiaron el mundo"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +9,14 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "5 datos cruciales sobre el estado de la educación en América Latina que revela la última prueba PISA"
+    "texto": "Las 2 causas científicas por las que se derrumbaron las Torres Gemelas tras el impacto de los aviones el 11 de septiembre de 2001"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Quién es la ingeniera Ilya Espino de Marotta, la primera mujer en dirigir el Canal de Panamá (y por qué suele usar un casco rosa)"
+    "texto": "Los preocupantes datos sobre el estado de la educación en América Latina que revela la última prueba PISA"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"¡Jefa, jefa, jefa!\": quién es Ilya Espino de Marotta, la ingeniera de casco rosa que al frente del Canal de Panamá supervisa parte del comercio mundial"
   }
 ]
