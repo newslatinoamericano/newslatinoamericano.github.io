@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Por qué el director de Anthropic, una de las grandes firmas tecnológicas, pide ralentizar el desarrollo de la inteligencia artificial"
+    "texto": "\"Los empleados estamos aterrados\": la advertencia de un exinvestigador de Anthropic a la BBC sobre los riesgos de la IA y por qué genera críticas"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Los gigantes de Silicon Valley que ignoran las advertencias sobre los peligros de la IA"
+    "texto": "Los excepcionales casos de las personas inmunes al VIH (y qué papel tienen en una posible cura)"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Por qué el director de Anthropic, una de las grandes firmas tecnológicas, pide ralentizar el desarrollo de la inteligencia artificial"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Fueron mejores amigas durante una década, hasta que una prueba de ADN reveló que eran hermanas"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La disparatada historia detrás de que esta banana costara US$6 millones"
   }
 ]
