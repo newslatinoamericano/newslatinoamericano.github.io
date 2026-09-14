@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "\"Los empleados estamos aterrados\": la advertencia de un exinvestigador de Anthropic a la BBC sobre los riesgos de la IA y por qué genera críticas"
+    "texto": "Por qué el estrecho de Bab el‑Mandeb es clave para el comercio mundial y cómo el avance de los hutíes podría desencadenar una crisis marítima"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Por qué el director de Anthropic, una de las grandes firmas tecnológicas, pide ralentizar el desarrollo de la inteligencia artificial"
+    "texto": "\"Los empleados estamos aterrados\": la advertencia de un exinvestigador de Anthropic a la BBC sobre los riesgos de la IA (y por qué genera críticas)"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Rusia ataca un tren ucraniano poco después de que altos funcionarios europeos abandonaran la estación"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Una versión medieval de la manósfera: lo que el tapiz de Bayeux revela sobre la sangrienta y obscena realidad de la Edad Media"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Fueron mejores amigas durante una década, hasta que una prueba de ADN reveló que eran hermanas"
   }
 ]
