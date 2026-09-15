@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Qué se sabe de los Geran-3, los nuevos drones a reacción que Rusia está usando contra Ucrania y que han golpeado con dureza a Kyiv"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué preocupa que la IA pueda amenazar a la humanidad y qué tan real es ese temor"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Por qué volvió la tensión entre Argentina e Inglaterra por Malvinas/Falklands 44 años después de la guerra"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Un ministro de Netanyahu pide retirar la ciudadanía israelí a dos cineastas por su documental sobre las muertes de civiles en Gaza"
   },
   {
     "region": "BBC Mundo",
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Estuve a semanas de casarme con un violador en serie. Mis seres queridos me salvaron la vida\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Premios Emmy 2026: estos son los ganadores de una gala en la que hizo historia la serie de comedia \"Widow's Bay\""
   }
 ]
