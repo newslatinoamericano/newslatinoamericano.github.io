@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Hace cuatro años que no lo veo y ya no sé si existe o no\": las mujeres que buscan a sus hijos en las cárceles de Bukele"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Qué se sabe de los Geran-3, los nuevos drones a reacción que Rusia está usando contra Ucrania y que han golpeado con dureza a Kyiv"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Las jaulas en las que eran encerrados los migrantes en el \"Alcatraz de los caimanes\" de Florida"
+    "texto": "Jantelagen, la idea que explica por qué los suecos valoran la humildad y no ponerse por encima de los demás"
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Estuve a semanas de casarme con un violador en serie. Mis seres queridos me salvaron la vida\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Premios Emmy 2026: estos son los ganadores de una gala en la que hizo historia la serie de comedia \"Widow's Bay\""
+    "texto": "\"Es una bofetada para las mujeres\": las fuertes críticas de deportistas de élite al polémico anuncio de Sydney Sweeney para una casa de apuestas"
   }
 ]
