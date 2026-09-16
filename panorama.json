@@ -1,11 +1,7 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Por qué aumentaron las ejecuciones en Florida, el estado que más impone la pena de muerte en EE.UU."
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Las nuevas tácticas de intimidación de los grupos antiinmigrantes que preocupan a Reino Unido"
+    "texto": "Por qué Florida es el estado que más condenados a muerte ejecuta en EE.UU."
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +9,14 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Cuál es la razón de que nos dé sueño después de almorzar (y por qué tomarse un café no es la mejor forma de espabilarse)"
+    "texto": "Cómo cultivar la imagen del \"chico bueno\" de la música llevó a Ed Sheeran a atravesar la peor crisis de su carrera"
   },
   {
     "region": "BBC Mundo",
     "texto": "Por qué el jefe de OpenAI pide que confiemos en la empresas de IA a pesar de que el mundo \"tiene razón en sentir miedo\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Cuál es la razón de que nos dé sueño después de almorzar (y por qué tomarse un café no es la mejor forma de espabilarse)"
   }
 ]
