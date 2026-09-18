@@ -5,6 +5,10 @@
   },
   {
     "region": "BBC Mundo",
+    "texto": "Trump anuncia un acuerdo con Dinamarca por el que EE.UU. asumirá el \"control permanente de la seguridad\" de Groenlandia"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Exclusiva BBC | \"Estoy diciendo la verdad\": el hermano de Diana de Gales defiende sus señalamientos de que Carlos III estaba \"eufórico\" tras la muerte de la princesa"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Condenan a Uber a pagar US$40 millones a la familia de una joven que murió en California después de que un conductor la abandonara en la autopista"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Descubrí que tenía una enfermedad rara gracias a una cita de Tinder\""
   }
 ]
