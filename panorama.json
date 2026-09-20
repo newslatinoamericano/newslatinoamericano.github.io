@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Cuál es la visión de China sobre los peligros de la inteligencia artificial en plena competencia con EE.UU."
+    "texto": "La remota isla donde los hackers se preparan para defendernos de una guerra invisible"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Ucrania golpea Moscú con unos 450 drones en el mayor ataque contra la capital rusa hasta la fecha"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Por qué la tuberculosis sigue matando a tanta gente si hay una cura y una vacuna desde hace décadas"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Ucrania golpea Moscú con unos 450 drones en el mayor ataque contra la capital rusa hasta la fecha"
   }
 ]
