@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Cómo la turística Santa Marta se convirtió en la primera prueba de fuego de la lucha de De la Espriella contra los grupos armados en Colombia"
+    "texto": "¿Qué es el kratom, la \"heroína de las gasolineras\" que causa alarma entre las autoridades en EE.UU.?"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Irán ofrece a EE.UU. un acuerdo para reabrir el estrecho de Ormuz en 7 días"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Declaran al Manchester City culpable de romper más de 100 reglas financieras del fútbol inglés: ¿cuál puede ser la sanción?"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Atrapar a un depredador\": el controvertido programa que exponía a pedófilos en TV y a cuyo presentador  interpreta Robert Pattinson en una nueva película"
   }
 ]
