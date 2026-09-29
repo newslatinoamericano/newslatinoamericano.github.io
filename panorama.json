@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "La BBC en primera línea de fuego de la guerra civil de Yemen, el conflicto que amenaza la seguridad energética mundial"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Quién es y qué crimen cometió Christa Pike, la primera mujer que será ejecutada en Tennessee en 200 años"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"El ganado se está muriendo de sed y hambre\": el devastador impacto de El Niño que ya se siente en el Corredor Seco de Centroamérica"
   },
   {
@@ -10,13 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Alerta en la costa del Pacífico de México ante la llegada del huracán Polo a la península de Baja California"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Quién es y qué crimen cometió Christa Pike, la primera mujer que será ejecutada en Tennessee en 200 años"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Cómo China está transformando una zona rural donde se cultivan papas en el centro de su competencia tecnológica con EE.UU."
   }
 ]
