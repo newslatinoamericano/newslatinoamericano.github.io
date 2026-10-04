@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Mitbestimmung\": cómo Alemania obliga a las grandes empresas a dar voz a los trabajadores en la toma de decisiones (y qué impacto tiene en la economía)"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Lo que la fallida ejecución de Christa Pike revela sobre la pena de muerte en EE.UU."
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Thomas Piketty: \"El nerviosismo que vemos hoy en Washington tiene que ver con el hecho de que EE.UU. está perdiendo el control sobre el mundo\""
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "Su esposa fue arrastrada por un tsunami y él lleva años buceando para sentirse cerca de ella"
   },
   {
     "region": "BBC Mundo",
-    "texto": "En fotos: las multitudinarias protestas en España contra la crisis de la vivienda"
+    "texto": "Por qué hay más de un Polo Norte (y lo difícil que es definir cuántos son en total)"
   }
 ]
