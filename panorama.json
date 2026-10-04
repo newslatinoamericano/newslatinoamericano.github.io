@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "\"Mitbestimmung\": cómo Alemania obliga a las grandes empresas a dar voz a los trabajadores en la toma de decisiones (y qué impacto tiene en la economía)"
+    "texto": "\"Una vez que la ves, no puedes dejar de pensar en ella\": Ana Mendieta, la artista que desafió límites con su cuerpo y cuya misteriosa muerte sigue dividiendo al mundo del arte"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Spa, el antiguo balneario conocido desde la época de los romanos que dio origen a la industria global del autocuidado"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Lo que la fallida ejecución de Christa Pike revela sobre la pena de muerte en EE.UU."
+    "texto": "Entrevisté a Christa Pike hace 20 años y no puedo dejar de pensar en ella"
   },
   {
     "region": "BBC Mundo",
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "Por qué cada vez que barajas cartas el resultado es un acontecimiento sin precedentes en la historia del universo"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Spa, el antiguo balneario conocido desde la época de los romanos que dio origen a la industria global del autocuidado"
   }
 ]
