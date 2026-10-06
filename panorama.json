@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "La investigación de la BBC que reveló cómo Putin está ampliando su residencia en el mar Negro que apenas visita"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué Pedro Sánchez decidió convocar elecciones anticipadas en España ahora"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Estamos listos para ir de inmediato\": los millonarios de origen cubano que se están preparando en Miami para cuando caiga el gobierno de la isla"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Quiénes son Lucas Pavanato y Nikolas Ferreira, los jóvenes influencers de derecha que lograron las mayores votaciones en la historia de la Cámara de Diputados de Brasil"
   },
   {
     "region": "BBC Mundo",
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "Qué salió mal en Nike, el gigante que perdió el liderazgo mundial de la ropa deportiva"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "5 ejercicios para proteger tu cuello del estrés y la mala postura"
   }
 ]
