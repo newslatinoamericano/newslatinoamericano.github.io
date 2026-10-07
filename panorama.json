@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Muere Maricarmen Abascal, la anciana de 87 años cuyo desahucio provocó una ola de protestas en España por la crisis de la vivienda"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Cómo se ha degradado la \"relación estratégica\" que mantienen Venezuela y Cuba desde hace años tras la captura de Maduro"
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Uno de cada cuatro de nosotros fue secuestrado o asesinado\": cómo intentan reconstruir sus vidas los residentes de un kibutz israelí devastado por los ataques de Hamás del 7 de octubre"
+    "texto": "\"Uno de cada cuatro fue secuestrado o asesinado\": cómo reconstruyen sus vidas los residentes de un kibutz israelí devastado por los ataques de Hamás del 7 de octubre"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Premian con el Nobel de Química a dos investigadores que revolucionaron la fabricación de medicamentos, fragancias y nuevos materiales"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Por qué Christa Pike sobrevivió a su ejecución, según su defensa (y qué ocurrirá ahora)"
+    "texto": "\"Está enojada y confundida\": por qué Christa Pike sobrevivió a su ejecución, según su defensa (y qué ocurrirá ahora)"
   }
 ]
