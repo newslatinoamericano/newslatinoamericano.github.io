@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "El creciente acercamiento de España a China y las tensiones que provoca en la Unión Europea"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Qué es y cómo se propaga la peste neumónica que se estudia en el laboratorio de Siberia en el que falleció una trabajadora"
   },
   {
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Detienen al exjefe de inteligencia de Alemania por espionaje y traición"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "5 ejercicios para proteger tu cuello del estrés y la mala postura"
+    "texto": "El emotivo último partido en el que Messi se despidió de la selección argentina"
   }
 ]
