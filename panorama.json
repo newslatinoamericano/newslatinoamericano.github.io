@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Muere Maricarmen Abascal, la anciana de 87 años cuyo desahucio provocó una ola de protestas en España por la crisis de la vivienda"
+    "texto": "Los israelíes exigen que se rindan cuentas por los errores del 7 de octubre, tres años después de los ataques de Hamás"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Muere Maricarmen Abascal, la anciana de 87 años cuyo desalojo provocó una ola de protestas en España por la crisis de la vivienda"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "La BBC entra en Gaza: campos infestados de ratas y miles de niños que necesitan ser evacuados de una zona devastada por la guerra"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Muere a los 81 años el icónico cantautor argentino Piero"
+    "texto": "Muere a los 81 años el cantautor argentino Piero, ícono de la canción popular y de protesta en América Latina"
   }
 ]
