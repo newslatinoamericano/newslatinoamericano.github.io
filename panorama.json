@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Los niños que desafían a francotiradores y morteros para ir a la escuela cerca del frente de guerra en Yemen"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Cómo llegó Colombia a tener una deuda pública tan alta (y por qué De la Espriella tendrá que aumentarla)"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Bluetoothing\": la peligrosa práctica de inyectarse sangre ajena para drogarse que podría estar alimentando una crisis de VIH"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Quién es Anne Carson, la poeta canadiense que obtuvo el Nobel de Literatura 2026 \"por su obra audaz e inventiva\""
   }
 ]
