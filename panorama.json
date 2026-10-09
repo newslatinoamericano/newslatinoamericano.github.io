@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Un fuerte terremoto de magnitud 7,7 sacude Panamá"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Especial BBC Mundo: Isla Coiba, la brutal prisión a cielo abierto que se convirtió en paraíso natural y a la que Panamá vuelve a enviar presos"
   },
   {
@@ -9,11 +13,7 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Equivaldría a tortura\": la reacción al anuncio del Pentágono de trasmitir en vivo la ejecución de Nidal Hasan, el primer militar que será fusilado en EE.UU. desde la II Guerra Mundial"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Isaías: el primer huracán de la temporada en el Atlántico se fortalece a categoría 3 mientras avanza por el golfo de México hacia EE.UU."
+    "texto": "\"Equivaldría a tortura\": el Pentágono transmitirá en vivo la ejecución de Nidal Hasan, el primer militar que será fusilado en EE.UU. desde la II Guerra Mundial"
   },
   {
     "region": "BBC Mundo",
