@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Un fuerte terremoto de magnitud 7,7 sacude Panamá y el presidente Mulino afirma que \"el desastre que estamos enfrentando es grande\""
+    "texto": "Un fuerte terremoto de magnitud 7,7 sacude Panamá: el presidente Mulino afirma que el desastre que enfrenta su país \"es grande\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Documental BBC: cómo sobreviven los niños en una Gaza devastada"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "EE.UU. impone fuertes sanciones a la Corte Penal Internacional horas después de que una de sus exjuezas ganara el Nobel de la Paz"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Simon se fortalece en el Pacífico y se prevé que toque tierra en las costas de México como potente huracán durante el fin de semana"
   }
 ]
