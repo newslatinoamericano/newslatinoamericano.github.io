@@ -1,7 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Hiroo Kanamori, el científico japonés que creó la escala que reemplazó a la de Richter (y por qué es mejor para medir terremotos de gran magnitud)"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Quién es James Chambers, el millonario \"comunista\" detenido en España a petición de EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Christa Pike sale del hospital y regresa a prisión 10 días después de sobrevivir a su fallida ejecución"
   },
   {
     "region": "BBC Mundo",
@@ -10,13 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "En imágenes: los graves destrozos que dejó el potente terremoto que sacudió Panamá este viernes"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Hiroo Kanamori, el científico japonés que creó la escala que reemplazó a la de Richter (y por qué es mejor para medir terremotos de gran magnitud)"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Simon se convierte en huracán de categoría 4 en el Pacífico y se prevé que toque tierra en las costas de México durante el fin de semana"
   }
 ]
