@@ -1,10 +1,6 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Hiroo Kanamori, el científico japonés que creó la escala que reemplazó a la de Richter (y por qué es mejor para medir terremotos de gran magnitud)"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "Al menos 12 muertos y más de 300 heridos en un ataque contra el aeropuerto internacional de Riad, la capital de Arabia Saudita"
   },
   {
@@ -13,10 +9,14 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Jonas I, el autoproclamado rey de Suiza que ha creado un polémico \"imperio\" al apropiarse de terrenos sin dueño"
+    "texto": "Hiroo Kanamori, el científico japonés que creó la escala que reemplazó a la de Richter (y por qué es mejor para medir terremotos de gran magnitud)"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Simon se dirige como huracán de categoría 4 hacia la costa de México en el Pacífico"
+    "texto": "El poderoso huracán Simon se acerca a la costa de México en el Pacífico con categoría 4"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Jonas I, el autoproclamado rey de Suiza que ha creado un polémico \"imperio\" al apropiarse de terrenos sin dueño"
   }
 ]
