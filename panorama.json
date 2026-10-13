@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Especial BBC: el desértico campo de batalla donde se libra una guerra con consecuencias globales"
+    "texto": "\"Niñas de 3 años contagiadas de VIH\": la indignación en Perú por las más de 1.000 víctimas de abuso sexual infantil que no han sido atendidas por la justicia"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "30 premios en 125 años: por qué menos del 4% de los Nobel de ciencia han sido para mujeres"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Un ciberataque contra neveras y congeladores de cientos de supermercados de Francia provoca pérdidas millonarias"
+    "texto": "En video | \"¿Es una broma?”: las llamadas de emergencia durante la fallida ejecución de Christa Pike en EE.UU."
   },
   {
     "region": "BBC Mundo",
-    "texto": "Muere a los 34 años RJ Mitte, el actor que daba vida al hijo de Walter White en la mítica serie \"Breaking Bad\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Digger: la nueva película de Tom Cruise se proyecta como uno de los mayores fracasos en la historia de Hollywood"
+    "texto": "\"Te echaré de menos, hijo\": el mensaje de Bryan Cranston tras la muerte de RJ Mitte, su compañero de elenco en \"Breaking Bad\""
   }
 ]
