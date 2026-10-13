@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "\"Si tienen tanta tecnología, por qué nos atacaron\": los pescadores ecuatorianos que fueron bombardeados en una operación por la que se señala a la CIA"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "Qué pasó con el experimento de Bukele de convertir a El Salvador en el \"país del bitcoin\""
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Un salvavidas financiero para Rusia mientras mata civiles en Ucrania\": las críticas contra Trump por su plan de importar diésel ruso"
+    "texto": "Un ciberataque contra neveras y congeladores de cientos de supermercados de Francia provoca pérdidas millonarias"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Qué es la \"depresión sonriente\" y cómo puedes identificarla"
+    "texto": "Muere a los 34 años RJ Mitte, el actor que daba vida al hijo de Walter White en la mítica serie \"Breaking Bad\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Digger: la nueva película de Tom Cruise se proyecta como uno de los mayores fracasos en la historia de Hollywood"
   }
 ]
