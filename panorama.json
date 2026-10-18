@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Cuánto aporta la rica provincia de Alberta a la economía de Canadá y qué pasaría si logra la independencia"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "El papa León XIV hace su primera aparición pública tras ser operado por un cáncer de pulmón y hay \"optimismo\" sobre su viaje a América Latina"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Un yate con una piscina de 50 metros y toboganes acuáticos: imágenes satelitales revelan el lujoso complejo de vacaciones de Kim Jong-un en Corea del Norte"
   },
   {
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "En video | El momento en que la torre de un histórico ayuntamiento francés se derrumba en llamas en medio de las protestas"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Trump levanta sanciones contra Rusia y se intensifica la disputa con Zelensky"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "El paraguas envenenado con el que se cometió un sofisticado asesinato político durante la Guerra Fría"
+    "texto": "Cómo el arroz puede ayudar a construir las casas del futuro"
   }
 ]
