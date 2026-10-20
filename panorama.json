@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "De estudiantes secundarios a “chalecos amarillos”: cómo creció la protesta que sacude Francia"
+    "texto": "De estudiantes secundarios a \"chalecos amarillos\": cómo creció la protesta que sacude Francia"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Alberta vota por seguir formando parte de Canadá, según resultados preliminares del referendo independentista"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Un sacerdote muere tras caerle encima un enorme crucifijo durante una misa que estaba transmitiendo en vivo en Ecuador"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Los hijos temporales que los ancianos contratan en China para combatir la soledad"
+    "texto": "Hipermovilidad: la poco conocida \"enfermedad de la flexibilidad\" que causa dolor y fatiga"
   }
 ]
