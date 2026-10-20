@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "De estudiantes secundarios a \"chalecos amarillos\": cómo creció la protesta que sacude Francia"
+    "texto": "Por qué Chile enfrenta una crisis económica con récord de desempleo en medio de las políticas de austeridad de Kast"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "En gráficos: ¿cómo le está yendo a la economía de EE.UU. bajo la presidencia de Trump?"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Los opositores a Putin deportados por Occidente a los que ahora Rusia envía a la guerra"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La nueva oleada de drogas sintéticas caseras que se propaga por EE.UU. y agrava la crisis del fentanilo"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "Hipermovilidad: la poco conocida \"enfermedad de la flexibilidad\" que causa dolor y fatiga"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "De Medellín a Ho Chi Minh: 5 ciudades en pleno auge que los viajeros no deberían perderse"
   }
 ]
