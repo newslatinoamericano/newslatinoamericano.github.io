@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Corea del Norte publica fotos de Kim Jong-un: ¿por qué siguen surgiendo rumores sobre su supuesta muerte?"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Springfield, el pueblo transformado por migrantes haitianos que se convirtió en  símbolo de la dura política migratoria de Trump"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Sitios web de todo el mundo quedan desactivados tras detectarse una falla de seguridad crítica en internet"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "El papa León XIV no necesitará más tratamientos tras la cirugía en la que le extirparon un tumor canceroso"
   }
 ]
