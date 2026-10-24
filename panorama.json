@@ -5,6 +5,10 @@
   },
   {
     "region": "BBC Mundo",
+    "texto": "Casi 1.000 detenidos en Francia después de que miles de personas salieran a las calles a protestar"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Fatima El Mansouri: cómo la primera mujer en liderar el gobierno de Marruecos está atrapada entre el rey, los clérigos y el feminismo"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Mi hermano compró una brillante cápsula azul sin saber que era cesio-137 y desató el mayor accidente radiactivo de la historia de mi país"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "El misterioso órgano de los cachalotes que les da fuerza para hundir barcos"
   }
 ]
