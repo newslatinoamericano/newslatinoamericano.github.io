@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Fatima El Mansouri: cómo la primera mujer en liderar el gobierno de Marruecos está atrapada entre el rey, los clérigos y el feminismo"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Bukele envía un contingente a Haití para ayudar a liberar a los 4 soldados salvadoreños \"secuestrados\" por pandillas"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "3 claves que explican por qué el duelo final entre Flávio Bolsonaro y Lula en Brasil es crucial para América Latina (y para Trump en EE.UU.)"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "¿Por qué hay tantas protestas en México y no afectan a la popularidad de la presidenta Claudia Sheinbaum?"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Las impactantes imágenes del tiroteo policial en el que murió un bebé de 1 año en EE.UU."
+    "texto": "Las imágenes del tiroteo policial en el que murió un bebé de 1 año en EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Amina Helmi, la científica argentina que recibió el \"Nobel de astrofísica\" por encontrar los restos de la última gran fusión de la Vía Láctea"
   }
 ]
