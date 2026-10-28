@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Cuál fue la posible causa del choque de trenes de alta velocidad que deja al menos 68 muertos en España"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Al menos 68 muertos en un choque de trenes de alta velocidad en España tras una decisión \"inexplicable\" del centro de control"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Cuál fue la posible causa del choque de trenes de alta velocidad que deja al menos 68 muertos en España"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "Imágenes muestran a Flávio Bolsonaro aterrizando en Miami luego de su derrota en las elecciones de Brasil"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Netanyahu y Eisenkot enfrentan un difícil camino hacia el poder en Israel después de que ninguno alcance una mayoría para formar gobierno"
+    "texto": "Los pasajeros de un crucero de lujo quedan varados en Camboya por el aumento del precio del combustible"
   }
 ]
