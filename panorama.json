@@ -1,15 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Guía visual para entender cómo fue el accidente de trenes en España que deja al menos 69 muertos"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"No hay palabras para describir tanto dolor\": Urda, el pueblo que se movilizó para ayudar a las víctimas tras el accidente de trenes en España"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Los gráficos que muestran cómo ha cambiado la migración en EE.UU. en la era Trump"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Guía visual para entender cómo fue el accidente de trenes en España que deja más de 70 muertos"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Reanude con marcha normal\": qué dicen las grabaciones de las llamadas entre el operador y los maquinistas de los trenes que chocaron en España"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"Tengo 96 años y 15 millones de seguidores\": las abuelas que encontraron fama y dinero en TikTok"
+    "texto": "Muere a los 86 años Patrick Stewart, legendario actor de Star Trek y X-Men"
   }
 ]
