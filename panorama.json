@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Investigación BBC: los saboteadores rusos que atentan desde dentro del país para ayudar a Ucrania frente a Putin"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Las claves del ultimátum de Bukele a las poderosas bandas de Haití tras el secuestro de 4 militares salvadoreños"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Qué fue el experimento Stanford y por qué causa polémica que Netflix haga un \"reality\" carcelario basado en él"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Hay más en la vida que solo competir y ganar\": la atleta que defecó durante una competencia de Hyrox habla con la BBC"
   }
 ]
