@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"La pérdida de capacidad del Estado de bienestar en Europa es la clave para entender las protestas lideradas por los jóvenes\""
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Trump asegura que Flávio Bolsonaro puede permanecer \"el tiempo que quiera\" en EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Cómo el socialismo ha ganado peso en la política de EE.UU. y por qué plantea un dilema para los demócratas"
   },
   {
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Cómo el desastre ferroviario en España ensombrece las posibilidades de reelección de Pedro Sánchez"
-  },
-  {
-    "region": "BBC Mundo",
     "texto": "\"Nos fuimos de vacaciones con nuestros vecinos e intercambiamos las familias: eso acabó destrozándonos\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La historia de cómo una sobreviviente de agresión sexual del siglo XV buscó justicia"
   }
 ]
