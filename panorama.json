@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Es Gaza o nada\": cómo el apoyo a Israel se convirtió en un punto clave de la contienda electoral en EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué Trump se enfrenta al mismo problema económico que hundió a Biden"
   },
   {
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "\"Nos abandonaron en bolsas cuando éramos bebés y décadas después descubrimos que éramos hermanos\""
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La fascinante historia del kohl, el delineador de ojos usado desde la época de Nefertiti"
   }
 ]
