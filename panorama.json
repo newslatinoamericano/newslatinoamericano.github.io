@@ -1,7 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "EE.UU. acude a las urnas en unas elecciones de medio mandato cruciales para el futuro del gobierno de Trump"
+    "texto": "Recta final de las elecciones de medio mandato en EE.UU., cruciales para el futuro del gobierno de Trump"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "8 gráficos que muestran por qué las elecciones de medio mandato llegan en mal momento para Trump y qué hay en juego"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Por qué (ahora sí) los demócratas pueden lograr en Texas un triunfo trascendental tras décadas de derrotas"
   },
   {
     "region": "BBC Mundo",
@@ -10,13 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Quiénes son las 9 víctimas del fatal accidente del avión privado que se estrelló en Florida"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Muere Jesús de Miguel, futbolista del Tenerife español, tras un choque en el campo de juego con el arquero rival"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Qué es el \"zeptoverso\", el mundo más pequeño jamás detectado en la naturaleza, y por qué es clave para entender el universo"
   }
 ]
