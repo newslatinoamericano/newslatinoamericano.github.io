@@ -1,7 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Recta final de las elecciones de medio mandato en EE.UU., cruciales para el futuro del gobierno de Trump"
+    "texto": "\"Ola azul\": los demócratas logran el control del Senado y la Cámara de Representantes en unas históricas elecciones de medio mandato de EE.UU."
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Los demócratas recuperan la Cámara y el Senado en una noche triunfal e infligen una \"derrota aplastante\" a Trump y sus aliados"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"Terremoto electoral\" en Texas: quién es James Talarico, el primer demócrata en ganar un lugar en el Senado de EE.UU. desde 1988"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Por qué (ahora sí) los demócratas pueden lograr en Texas un triunfo trascendental tras décadas de derrotas"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La madre en Chile a la que obligaron a esperar que su bebé muriera en su vientre y ahora un fallo histórico le otorga una indemnización millonaria"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Quiénes son las 9 víctimas del fatal accidente del avión privado que se estrelló en Florida"
+    "texto": "Trump anuncia que EE.UU. suspenderá la ayuda financiera a Israel a finales de este año"
   }
 ]
