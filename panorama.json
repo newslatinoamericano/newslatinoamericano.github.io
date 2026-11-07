@@ -1,6 +1,14 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "El expresidente de Paraguay, Santiago Peña, pasa su primera  noche bajo arresto en un cuartel militar en medio de protestas en Asunción"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Con la elección de Stephen Miller como jefe de gabinete, Trump se prepara para una batalla"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "El escándalo de Ueno Bank en Paraguay se salda con la detención de Santiago Peña y con Pedro Alliana como nuevo presidente del país"
   },
   {
@@ -9,14 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Qué pasó en la isla noruega que quiso abolir el tiempo"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Espías, informantes y policía secreta: Hungría se enfrenta a su pasado al abrir los archivos de la era comunista"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Casavalle, la barriada humilde de Montevideo que aguarda al papa León XIV estremecida por la violencia"
+    "texto": "\"Cuando hablamos del fin del mundo, todos piensan en meteoritos, virus o un supertsunami, pero pocos imaginan un choque ontológico\""
   }
 ]
