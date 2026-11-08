@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"El mundo se ha vuelto un lugar extraño\": el desconcierto que genera el fin de las viejas certezas"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Ana donó sus órganos al morir en España por eutanasia: ahora un grupo de abogados cristianos quiere prohibir que vuelva a suceder"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Un juez de Paraguay ordena la prisión preventiva para el expresidente Peña por el caso Ueno Bank"
+    "texto": "Un juez de Paraguay ordena la prisión preventiva del expresidente Peña en un cuartel militar donde podrá recibir visitas y usar su teléfono"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"El mundo se ha vuelto un lugar extraño\": el desconcierto que genera el fin de las viejas certezas"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Qué se sabe del ataque que dejó al menos 6 muertos y decenas de heridos en Polonia"
+    "texto": "La arriesgada misión para extraer de Polonia el cohete v2, el \"arma milagrosa\" de Hitler"
   }
 ]
