@@ -1,11 +1,7 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "El mensaje del papa León XIV frente a Milei a su llegada a Argentina"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La coalición de Trump quedó hundida: ¿qué harán ahora los republicanos?"
+    "texto": "Las imágenes satelitales que muestran importantes obras de construcción cerca de las bases de misiles de Irán"
   },
   {
     "region": "BBC Mundo",
@@ -13,10 +9,14 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "\"El mundo se ha vuelto un lugar extraño\": el desconcierto que genera el fin de las viejas certezas"
+    "texto": "\"La economía debe estar al servicio de las personas y no las personas al servicio de la economía\": el mensaje del papa León XIV frente a Milei a su llegada a Argentina"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Un juez de Paraguay ordena la prisión preventiva del expresidente Peña en un cuartel militar donde podrá recibir visitas y usar su teléfono"
+    "texto": "La coalición de Trump quedó hundida: ¿qué harán ahora los republicanos?"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"El mundo se ha vuelto un lugar extraño\": el desconcierto que genera el fin de las viejas certezas"
   }
 ]
