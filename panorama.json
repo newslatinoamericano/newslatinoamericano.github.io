@@ -1,15 +1,11 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"No tengo noticias de mi dinero\": los millones de paraguayos afectados por la crisis del Ueno Bank que reclaman la devolución de sus ahorros"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Por qué México recauda tan pocos impuestos (y cómo financia su creciente Estado de bienestar)"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Qué presencia tienen los lefebvrianos en Argentina, el primer país de América Latina en el que se estableció el grupo que desafía a León XIV"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Por qué la infidelidad del jefe de Nvidia con una supesta espía china tendrá repercusiones en EE.UU. y más allá"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Las personas que solo necesitan dormir 4 horas y cómo lo explica la genética"
+    "texto": "Por qué la infidelidad del jefe de Nvidia con una supesta espía china tendrá repercusiones en EE.UU. y más allá"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Mi hermano murió tras rechazar una transfusión por sus creencias; semanas después los Testigos de Jehová eliminaron esa prohibición"
   }
 ]
