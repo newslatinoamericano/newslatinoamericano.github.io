@@ -1,7 +1,11 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "\"Es insostenible\": El Hierro, la isla de 12.000 habitantes en Canarias a la que han llegado 8.000 migrantes en barca en las últimas 5 semanas"
+    "texto": "Por qué México recauda tan pocos impuestos (y cómo financia su creciente Estado de bienestar)"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Qué presencia tienen los lefebvrianos en Argentina, el primer país de América Latina en el que se estableció el grupo que desafía a León XIV"
   },
   {
     "region": "BBC Mundo",
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Las 4 investigaciones que los demócratas pueden abrir contra el gobierno de Trump tras tomar control del Congreso de EE.UU."
+    "texto": "\"Epstein me violó más de 200 veces\": los nuevos testimonios de mujeres que fueron reclutadas por un socio del financiero mediante una agencia de modelos"
   },
   {
     "region": "BBC Mundo",
-    "texto": "La Fiscalía de Paraguay trata de abrir una bóveda oculta hallada en una propiedad del expresidente Santiago Peña"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Mis padres decidieron morir juntos y yo tuve que afrontar su pérdida solo"
+    "texto": "Las personas que solo necesitan dormir 4 horas y cómo lo explica la genética"
   }
 ]
