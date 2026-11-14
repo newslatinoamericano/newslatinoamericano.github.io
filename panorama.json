@@ -1,11 +1,7 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Qué se sabe sobre la suspensión de vuelos en EE.UU. más grande desde el 11S"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Autorizan de nuevo el despegue de aviones en EE.UU. tras la falla que obligó a suspender durante horas miles de vuelos en todo el país"
+    "texto": "Por culpa de un viejo cable de cobre: qué se sabe de la suspensión de vuelos en EE.UU. más grande desde el 11S"
   },
   {
     "region": "BBC Mundo",
@@ -18,5 +14,9 @@
   {
     "region": "BBC Mundo",
     "texto": "Los momentos de la historia que más alteraron la estatura de los humanos"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Asere, corillo o chuchaqui: las \"sopotocientas\" palabras nuevas que incorporó el Diccionario de la lengua española (y el enorme aporte de América Latina)"
   }
 ]
