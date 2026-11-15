@@ -1,11 +1,15 @@
 [
   {
     "region": "BBC Mundo",
-    "texto": "Zelensky asegura que EE.UU. propuso a Ucrania ceder el Donbás a Rusia a cambio de ingresar en la OTAN"
+    "texto": "\"Quizás veamos el 25 de octubre de este año como el comienzo del fin de la recesión democrática mundial\""
   },
   {
     "region": "BBC Mundo",
     "texto": "\"Las cortinas se pegaron al techo\": cómo sobreviví al desastre de San Juanico, la explosión que dejó 650 muertos en México en 1984"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Zelensky asegura que EE.UU. propuso a Ucrania ceder el Donbás a Rusia a cambio de ingresar en la OTAN"
   },
   {
     "region": "BBC Mundo",
@@ -14,9 +18,5 @@
   {
     "region": "BBC Mundo",
     "texto": "Me dijeron que mi bebé había fallecido... 42 años después me envió un correo electrónico"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "Los momentos de la historia que más alteraron la estatura de los humanos"
   }
 ]
