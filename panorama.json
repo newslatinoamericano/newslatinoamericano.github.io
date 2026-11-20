@@ -1,15 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Aquí los drones no vuelan\": la BBC en el interior del gasoducto desde el que Ucrania libra una guerra subterránea contra Rusia"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "Por qué la condena por genocidio contra Myanmar es histórica y podría tener repercusiones de gran alcance"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "Anthropic: por qué el mayor debut bursátil de la historia pone a prueba \"la burbuja\" de la IA y la posibilidad de que estalle"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "China, Rusia y EE.UU. \"deben dar ejemplo\" y \"mantener la paz\": lo que Trump, Putin y Xi dijeron en su histórica cumbre"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Sin nuestro territorio, la vida será muy difícil\": quiénes son los awá, el grupo de indígenas aislados de Brasil que hizo un contacto inusual con otra comunidad"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "La hipopótamo Fiona muere tras tragarse el gorro de un visitante en el zoológico de Cincinnati"
+    "texto": "El hotel peruano que ofrece vistas espectaculares, pero requiere nervios de acero para llegar a él"
   }
 ]
