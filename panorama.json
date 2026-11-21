@@ -1,6 +1,10 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "\"Hay una parte de mí que va aprendiendo a ser viejo, pero hay otra a la que le cuesta muchísimo\": Jorge Drexler"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"No quise negociar la sangre de mi hija\": la madre de una adolescente muerta a tiros en las protestas en Irán exige justicia desde el exilio"
   },
   {
@@ -9,14 +13,10 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "En qué consiste y a quién beneficia el acuerdo de \"reinicio\" de las relaciones entre Reino Unido y la Unión Europea tras el Brexit"
+    "texto": "\"Los asesinatos se convirtieron en ficción\": cómo la prensa sensacionalista del siglo XIX creó el mito de Jack el Destripador"
   },
   {
     "region": "BBC Mundo",
-    "texto": "Lo que podemos aprender de una antigua ciudad subterránea de Turquía sobre cómo escapar del calor y el frío extremos"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Me cuestionaba por qué vine a este mundo con piel morena, cuando mi padre era blanco\": BBC Mundo entrevista a la cantante mexicana Lila Downs"
+    "texto": "Cómo una taza de té mal servida transformó la estadística y abrió el camino a la ciencia de los datos"
   }
 ]
