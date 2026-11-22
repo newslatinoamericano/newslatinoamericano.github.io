@@ -1,15 +1,15 @@
 [
   {
     "region": "BBC Mundo",
+    "texto": "Pasé más de 10 años llevando por las montañas de Colombia los mensajes secretos que hicieron posible el acuerdo de paz entre el gobierno y las FARC"
+  },
+  {
+    "region": "BBC Mundo",
+    "texto": "\"Fui coaccionada para tener un hijo\": cómo un multimillonario engañó a la exitosa DJ Liv Nervo para que quedara embarazada"
+  },
+  {
+    "region": "BBC Mundo",
     "texto": "\"La utopía socialista\" que llevó a un grupo de australianos idealistas a Paraguay hace más de 130 años (y en qué terminó la experiencia)"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "La ciudad reconstruida tras unas devastadoras riadas que se convirtió en escaparate del gobierno del líder rebelde libio"
-  },
-  {
-    "region": "BBC Mundo",
-    "texto": "\"Hay una parte de mí que va aprendiendo a ser viejo, pero hay otra a la que le cuesta muchísimo\": Jorge Drexler"
   },
   {
     "region": "BBC Mundo",
@@ -17,6 +17,6 @@
   },
   {
     "region": "BBC Mundo",
-    "texto": "Cómo una taza de té mal servida transformó la estadística y abrió el camino a la ciencia de los datos"
+    "texto": "Cómo dos neveras abandonadas por el ejército de EE.UU. en Toscana dieron origen al helado italiano"
   }
 ]
